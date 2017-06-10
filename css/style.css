@@ -17,20 +17,28 @@ body {
 
 .bg-element {
   position: absolute;
+
   background: url("../img/bg_element.png") center right no-repeat;
   opacity: 0.07;
-  z-index: -999;
 
-  margin: 0 auto;
-  margin-top: -55px;
+  width: 569px;
+  height: 680px;
+
+  top: 5%;
+  right: 5%;
+
+  transform: rotate(4deg);
 }
 
 .site-header {
+  position: relative;
+  z-index: 1;
   width: 100%;
   padding: 0 20px;
 }
 
 .wrapper-background {
+  position: relative;
   background: #333333 url("../img/bg_b.jpg");
   padding: 20px;
 }
@@ -79,10 +87,6 @@ body {
           border-radius: 5px;
 }
 
-.time-line-racers-width {
-  width: 30px;
-}
-
 /*Racers Time Line
 ===========================================*/
 
@@ -95,33 +99,44 @@ body {
 
   top: -15px;
   left: 0%;
+
+  width: 30px;
 }
 
-.babd { left: 99%; z-index: 25; opacity: 1.00; }
-.babl { left: 17%; z-index:  5; opacity: 0.60; }
-.babm { left:  1%; z-index:  1; opacity: 0.52; }
-.babp { left:  3%; z-index:  3; opacity: 0.56; }
-.bir  { left: 34%; z-index: 10; opacity: 0.70; }
-.bow  { left: 74%; z-index: 21; opacity: 0.92; }
-.bowj { left: 96%; z-index: 24; opacity: 0.98; }
-.dai  { left: 75%; z-index: 22; opacity: 0.94; }
-.did  { left: 33%; z-index:  9; opacity: 0.68; }
-.don  { left: 62%; z-index: 17; opacity: 0.84; }
-.dry  { left: 43%; z-index: 13; opacity: 0.76; }
-.dryb { left: 59%; z-index: 16; opacity: 0.82; }
-.fun  { left: 44%; z-index: 14; opacity: 0.78; }
-.kin  { left: 13%; z-index:  4; opacity: 0.58; }
-.koo  { left:  2%; z-index:  2; opacity: 0.54; }
-.lui  { left: 39%; z-index: 12; opacity: 0.74; }
-.mar  { left: 68%; z-index: 19; opacity: 0.88; }
-.mii  { left: 88%; z-index: 23; opacity: 0.96; }
-.pea  { left: 24%; z-index:  6; opacity: 0.62; }
-.ros  { left: 70%; z-index: 20; opacity: 0.90; }
-.toa  { left: 36%; z-index: 11; opacity: 0.72; }
-.toad { left: 68%; z-index: 18; opacity: 0.86; }
-.wal  { left: 57%; z-index: 15; opacity: 0.80; }
-.war  { left: 29%; z-index:  8; opacity: 0.66; }
-.yos  { left: 26%; z-index:  7; opacity: 0.64; }
+.finish {
+  position: absolute;
+
+  top: -15px;
+  left: 100%;
+
+  width: 30px;
+}
+
+.babd {}
+.babl {}
+.babm {}
+.babp {}
+.bir  {}
+.bow  {}
+.bowj {}
+.dai  {}
+.did  {}
+.don  {}
+.dry  {}
+.dryb {}
+.fun  {}
+.kin  {}
+.koo  {}
+.lui  {}
+.mar  {}
+.mii  {}
+.pea  {}
+.ros  {}
+.toa  {}
+.toad {}
+.wal  {}
+.war  {}
+.yos  {}
 
 /* Table Styles
 =========================================== */
@@ -172,7 +187,7 @@ td:nth-child(3) {
 }
 
 td:nth-child(3):hover {
-  transform: scale(1.1);
+  transform: scale(1.05);
 }
 
 /* Give the racer name a bit more width than strictly necessary */
