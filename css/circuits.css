@@ -1,0 +1,32 @@
+.peach-gardens-ds {
+  position: relative;
+  animation: peachgardensds;
+  animation-duration: 40000ms;
+  animation-iteration-count: 3;
+  animation-fill-mode: forwards;
+  animation-timing-function: linear;
+}
+
+@keyframes peachgardensds {
+  0%     { top: 266px; left: 149px; }
+  5%     { top: 204px; left: 149px; }
+  10%    { top: 170px; left: 110px; }
+  15%    { top: 173px; left:  33px; }
+  20%    { top: 150px; left:  15px; }
+  25%    { top:  83px; left:  24px; }
+  30%    { top:  44px; left:  42px; }
+  35%    { top:  36px; left:  96px; }
+  40%    { top:  45px; left: 123px; }
+  45%    { top:  36px; left: 149px; }
+  50%    { top:  45px; left: 176px; }
+  55%    { top:  36px; left: 203px; }
+  60%    { top:  60px; left: 290px; }
+  65%    { top: 117px; left: 278px; }
+  70%    { top: 153px; left: 291px; }
+  75%    { top: 203px; left: 281px; }
+  80%    { top: 229px; left: 293px; }
+  85%    { top: 269px; left: 270px; }
+  90%    { top: 297px; left: 280px; }
+  95%    { top: 300px; left: 180px; }
+  100%   { top: 266px; left: 149px; }
+}
