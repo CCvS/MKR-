@@ -1,10 +1,5 @@
-var clickName = $(".js-fill-in-time-button");
-
 function enterTime() {
-  clickName.click(function() {
-    prompt('Enter time');
+  $(".js-fill-in-time-button").on("click", "td", function() {
+    prompt('Enter ' + 'racer.name' + "'s" + ' time');
   });
-
-}
-
-enterTime();
+};

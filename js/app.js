@@ -67,4 +67,5 @@ function $$(expr) {
 
 window.onload = function () {
     updateHTML(bootstrap());
+    enterTime();
 };

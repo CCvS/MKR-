@@ -1,3 +1,25 @@
+.luigi-circuit {
+  position: relative;
+  animation: luigicircuit;
+  animation-duration: 20000ms;
+  animation-iteration-count: 3;
+  animation-fill-mode: forwards;
+  animation-timing-function: linear;
+}
+
+@keyframes luigicircuit {
+  0%     { top: 170px; left:  80px; }
+  10%    { top:  82px; left:  88px; }
+  20%    { top:  56px; left: 150px; }
+  30%    { top:  45px; left: 191px; }
+  40%    { top:  77px; left: 229px; }
+  50%    { top: 186px; left: 149px; }
+  60%    { top: 260px; left: 146px; }
+  80%    { top: 280px; left: 117px; }
+  90%    { top: 253px; left:  76px; }
+  100%   { top: 170px; left:  80px; }
+}
+
 .peach-gardens-ds {
   position: relative;
   animation: peachgardensds;
