@@ -1,27 +1,28 @@
 .luigi-circuit {
-  position: relative;
+  position: absolute;
   animation: luigicircuit;
-  animation-duration: 20000ms;
+  animation-duration: 27084ms;
   animation-iteration-count: 3;
   animation-fill-mode: forwards;
   animation-timing-function: linear;
 }
 
 @keyframes luigicircuit {
-  0%     { top: 170px; left:  80px; }
-  10%    { top:  82px; left:  88px; }
-  20%    { top:  56px; left: 150px; }
-  30%    { top:  45px; left: 191px; }
-  40%    { top:  77px; left: 229px; }
-  50%    { top: 186px; left: 149px; }
-  60%    { top: 260px; left: 146px; }
-  80%    { top: 280px; left: 117px; }
-  90%    { top: 253px; left:  76px; }
-  100%   { top: 170px; left:  80px; }
+  0%     { top: 170px; left:  95px; }
+  18%    { top:  82px; left: 103px; }
+  28%    { top:  56px; left: 165px; }
+  34%    { top:  45px; left: 206px; }
+  43%    { top:  77px; left: 244px; }
+  65%    { top: 186px; left: 164px; }
+  80%    { top: 260px; left: 161px; }
+  84%    { top: 280px; left: 132px; }
+  88%    { top: 273px; left: 100px; }
+  91%    { top: 253px; left:  91px; }
+  100%   { top: 170px; left:  95px; }
 }
 
 .peach-gardens-ds {
-  position: relative;
+  position: absolute;
   animation: peachgardensds;
   animation-duration: 40000ms;
   animation-iteration-count: 3;

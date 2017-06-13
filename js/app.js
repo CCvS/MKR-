@@ -19,7 +19,7 @@ function loadRacers(racerList) {
 function updateHTML(table) {
   var output = "";
   var fillInButton = "js-fill-in-time-button";
-  var positions = $('.time-table >tbody >tr').length + 1;
+  var positions = $(".time-table").length + 1;
   table.forEach(function (racer) {
     var classList = "";
     if (racer.movement === "up") {
