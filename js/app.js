@@ -19,7 +19,7 @@ function loadRacers(racerList) {
 function updateHTML(table) {
   var output = "";
   var fillInButton = "js-fill-in-time-button";
-  var positions = $(".time-table").length + 1;
+
   table.forEach(function (racer) {
     var classList = "";
     if (racer.movement === "up") {
@@ -28,8 +28,12 @@ function updateHTML(table) {
       classList = "animated fadeInDown down";
     }
 
+    for (var position = 1; position < 26; position++) {
+       console.log(position);
+    }
+
     output += "<tr class=\"" + classList + "\">";
-    output += "<td>" + positions + "." + "</td>";
+    output += "<td>" + position + "." + "</td>";
     output += "<td>" + racer.table_img + "</td>";
     output += "<td class=\"" + fillInButton + "\">" + racer.name + "</td>";
     output += "<td>" + racer.kart + "</td>";
