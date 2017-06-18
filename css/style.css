@@ -218,14 +218,14 @@ tr.down { background-color: rgba(255,64,64, 0.5); }
 }
 
 .circuit-map {
-  background: url("../img/circuits/2-moo-moo-meadows.png") center center no-repeat;
+  background: url("../img/circuits/3-mushroom-gorge.png") center center no-repeat;
   background-size: 100%;
   width: 360px;
   height: 360px;
 }
 
 .circuit-name {
-  font-size: 26px;
+  font-size: 24px;
   line-height: 150%;
   text-align: center;
   text-transform: uppercase;

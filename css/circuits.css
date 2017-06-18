@@ -47,3 +47,30 @@
   94%    { top: 210px; left: 285px; }
   100%   { top: 161px; left: 287px; }
 }
+
+.mushroom-gorge {
+  position: absolute;
+  animation: mushroomgorge;
+  animation-duration: 39558ms;
+  animation-iteration-count: 3;
+  animation-fill-mode: forwards;
+  animation-timing-function: linear;
+}
+
+@keyframes mushroomgorge {
+  0%     { top: 230px; left: 278px; }
+  16%    { top: 139px; left: 286px; }
+  25%    { top: 104px; left: 247px; }
+  33%    { top:  35px; left: 228px; }
+  38%    { top:  30px; left: 181px; }
+  47%    { top:  69px; left:  86px; }
+  53%    { top: 105px; left:  39px; }
+  60%    { top: 155px; left:  60px; }
+  68%    { top: 211px; left: 118px; }
+  77%    { top: 240px; left: 170px; }
+  82%    { top: 249px; left: 223px; }
+  87%    { top: 275px; left: 244px; }
+  90%    { top: 283px; left: 259px; }
+  93%    { top: 270px; left: 276px; }
+  100%   { top: 230px; left: 278px; }
+}

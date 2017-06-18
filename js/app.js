@@ -28,10 +28,6 @@ function updateHTML(table) {
       classList = "animated fadeInDown down";
     }
 
-    for (var position = 1; position < 26; position++) {
-       console.log(position);
-    }
-
     output += "<tr class=\"" + classList + "\">";
     output += "<td>" + position + "." + "</td>";
     output += "<td>" + racer.table_img + "</td>";
@@ -45,6 +41,12 @@ function updateHTML(table) {
 
   $$("table > tbody").innerHTML = output;
 }
+
+// for (var position = 1; position < 26; position++) {
+//    console.log(position);
+// }
+
+var position = $('.time-table').find('tr').length;
 
 function bootstrap() {
   var initialTable = [];
