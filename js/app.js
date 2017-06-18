@@ -16,6 +16,8 @@ function loadRacers(racerList) {
   });
 }
 
+var position = $('.time-table').find('tr').length;
+
 function updateHTML(table) {
   var output = "";
   var fillInButton = "js-fill-in-time-button";
@@ -29,7 +31,7 @@ function updateHTML(table) {
     }
 
     output += "<tr class=\"" + classList + "\">";
-    output += "<td>" + position + "." + "</td>";
+    output += "<td>" + position++ + "." + "</td>";
     output += "<td>" + racer.table_img + "</td>";
     output += "<td class=\"" + fillInButton + "\">" + racer.name + "</td>";
     output += "<td>" + racer.kart + "</td>";
@@ -41,12 +43,6 @@ function updateHTML(table) {
 
   $$("table > tbody").innerHTML = output;
 }
-
-// for (var position = 1; position < 26; position++) {
-//    console.log(position);
-// }
-
-var position = $('.time-table').find('tr').length;
 
 function bootstrap() {
   var initialTable = [];
