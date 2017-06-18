@@ -173,7 +173,8 @@ tr:nth-child(odd) {
 }
 
 td:nth-child(1) {
-  padding: 0 0 0 5px;
+  text-align: right;
+  padding: 0 2px 0 0;
   width: 22px;
 }
 
@@ -218,17 +219,21 @@ tr.down { background-color: rgba(255,64,64, 0.5); }
 }
 
 .circuit-map {
-  background: url("../img/circuits/3-mushroom-gorge.png") center center no-repeat;
+  background: url("../img/circuits/1-luigi-circuit.png") center center no-repeat;
   background-size: 100%;
   width: 360px;
   height: 360px;
 }
 
 .circuit-name {
+  background: rgba(0, 0, 0, 0.45);
   font-size: 24px;
   line-height: 150%;
   text-align: center;
   text-transform: uppercase;
+
+  border: 2px solid #373a0a;
+  border-radius: 5px;
 }
 
 .arrow-left,

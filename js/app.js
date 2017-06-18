@@ -9,14 +9,14 @@ function loadRacers(racerList) {
   racerList.forEach(function (racer) {
     config.racers[racer.id] = {
       id:         racer.id,
-      table_img:  racer.table_img,
+      img:        racer.img,
       name:       racer.name,
       kart:       racer.kart
     };
   });
 }
 
-var position = $('.time-table').find('tr').length;
+var position = $('.time-table tr').length;
 
 function updateHTML(table) {
   var output = "";
@@ -30,9 +30,10 @@ function updateHTML(table) {
       classList = "animated fadeInDown down";
     }
 
+    // TODO: Variables to count TIME + difference between racers
     output += "<tr class=\"" + classList + "\">";
     output += "<td>" + position++ + "." + "</td>";
-    output += "<td>" + racer.table_img + "</td>";
+    output += "<td>" + "<img src=\"" + "img/time-table/" + racer.img + ".png" + "\">" + "</td>";
     output += "<td class=\"" + fillInButton + "\">" + racer.name + "</td>";
     output += "<td>" + racer.kart + "</td>";
     output += "<td>" + "0" + "</td>";
