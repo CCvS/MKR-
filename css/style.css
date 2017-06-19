@@ -12,7 +12,6 @@ body {
   line-height: 2em;
   background: #ffffff url("../img/bg_w.jpg");
   color: #ffffff;
-  padding-bottom: 60px;
 }
 
 .bg-element {
@@ -50,7 +49,7 @@ body {
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#007d83d6', endColorstr='#7d83d6',GradientType=0 );
 
   height: 5px;
-  margin-top: -25px;
+  margin: -25px 0 0;
 }
 
 .wrapper-background__border-bottom {
@@ -60,6 +59,7 @@ body {
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#7d83d6', endColorstr='#007d83d6',GradientType=0 );
 
   height: 5px;
+  margin: 0 0 60px;
 }
 
 /*Time Line
@@ -184,12 +184,13 @@ td:nth-child(2) {
 
 td:nth-child(3) {
   cursor: pointer;
-  transition: all .1s ease-in-out;
 }
 
-td:nth-child(3):hover {
-  transform: scale(1.05);
-}
+tr { transition: all .1s ease-in-out; }
+tr:hover { transform: scale(1.05); }
+
+thead tr { transition: none; }
+thead tr:hover { transform: none; }
 
 /* Give the racer name a bit more width than strictly necessary */
 tr td:nth-child(3),
@@ -201,7 +202,7 @@ tr th:nth-child(3) {
 tr td:nth-child(4),
 tr th:nth-child(4) {
   width: 95px;
-  padding-left: 5px;
+  padding: 0 5px 0 0;
 }
 
 /* Background colours for racers moving up or down */
@@ -240,4 +241,7 @@ tr.down { background-color: rgba(255,64,64, 0.5); }
 .arrow-right {
   margin: 0 auto;
   cursor: pointer;
+  transition: all .1s ease-in-out;
 }
+.arrow-left:hover,
+.arrow-right:hover { transform: scale(1.3); }
