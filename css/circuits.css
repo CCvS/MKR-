@@ -1,8 +1,6 @@
 .luigi-circuit {
   position: absolute;
   animation: luigicircuit;
-  animation-duration: 27084ms;
-  animation-iteration-count: 3;
   animation-fill-mode: forwards;
   animation-timing-function: linear;
 }
