@@ -19,8 +19,8 @@ loadRacers([
   {"id":18,"img":"mii","name":"Carl","kart":"Dragonetti"},
   {"id":19,"img":"pea","name":"Peach","kart":"B Dasher Mk 2"},
   {"id":20,"img":"ros","name":"Rosalina","kart":"Standard Kart L"},
-  {"id":21,"img":"toa","name":"tod","kart":"Rally Romper"},
-  {"id":22,"img":"tod","name":"todette","kart":"Blue Falcon"},
+  {"id":21,"img":"toa","name":"Toad","kart":"Rally Romper"},
+  {"id":22,"img":"tod","name":"Toadette","kart":"Blue Falcon"},
   {"id":23,"img":"wal","name":"Waluigi","kart":"Piranha Prowler"},
   {"id":24,"img":"war","name":"Wario","kart":"Offroader"},
   {"id":25,"img":"yos","name":"Yoshi","kart":"Royal Racer"}

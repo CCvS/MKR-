@@ -5,7 +5,7 @@ function loadTimes(raceList) {
     if (!config.times[race.date]) { config.times[race.date] = []; }
 
     // The goals are a string instead of a numeric for some reason.
-    // Probluy as a potential gotcha in this test..
+    // Probably as a potential gotcha in this test..
     config.times[race.date].push({
       timeRacerId: race.timeRacerId,
       totalHrs:    parseInt(race.totalHrs, 2),
