@@ -90,11 +90,11 @@ body {
 /*Racers Time Line
 ===========================================*/
 
-.babd, .babl, .babm, .babp, .bir,
-.bow, .bowj, .dai, .did, .don,
-.dry, .dryb, .fun, .kin, .koo,
+.bda, .blu, .bma, .bpe, .bir,
+.bow, .boj, .dai, .did, .don,
+.dry, .drb, .fun, .kin, .koo,
 .lui, .mar, .mii, .pea, .ros,
-.toa, .toad, .wal, .war, .yos {
+.toa, .tod, .wal, .war, .yos {
   position: absolute;
 
   top: -15px;
@@ -112,31 +112,31 @@ body {
   width: 30px;
 }
 
-.babd {}
-.babl {}
-.babm {}
-.babp {}
-.bir  {}
-.bow  {}
-.bowj {}
-.dai  {}
-.did  {}
-.don  {}
-.dry  {}
-.dryb {}
-.fun  {}
-.kin  {}
-.koo  {}
-.lui  {}
-.mar  {}
-.mii  {}
-.pea  {}
-.ros  {}
-.toa  {}
-.toad {}
-.wal  {}
-.war  {}
-.yos  {}
+.bda {}
+.blu {}
+.bma {}
+.bpe {}
+.bir {}
+.bow {}
+.boj {}
+.dai {}
+.did {}
+.don {}
+.dry {}
+.drb {}
+.fun {}
+.kin {}
+.koo {}
+.lui {}
+.mar {}
+.mii {}
+.pea {}
+.ros {}
+.toa {}
+.tod {}
+.wal {}
+.war {}
+.yos {}
 
 /* Table Styles
 =========================================== */
