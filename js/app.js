@@ -30,7 +30,7 @@ function updateHTML(table) {
       classList = "animated fadeInDown down";
     }
 
-    // TODO: Variables to count TIME + difference between racers + get data-id
+    // TODO: Variables to count TIME + difference between racers
     output += "<tr class=\"" + classList + "\">";
     output += "<td>" + position++ + "." + "</td>";
     output += "<td>" + "<img src=\"" + "img/time-table/" + racer.img + ".png" + "\">" + "</td>";
