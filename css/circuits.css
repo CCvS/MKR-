@@ -1,53 +1,11 @@
-.luigi-circuit-lap-1 {
+.luigi-circuit {
   position: absolute;
-  animation: luigicircuitlap1;
+  animation: luigicircuit;
   animation-fill-mode: forwards;
   animation-timing-function: linear;
 }
 
-@keyframes luigicircuitlap1 {
-  0%     { top: 170px; left:  95px; }
-  18%    { top:  82px; left: 103px; }
-  28%    { top:  56px; left: 165px; }
-  34%    { top:  45px; left: 206px; }
-  43%    { top:  77px; left: 244px; }
-  65%    { top: 186px; left: 164px; }
-  80%    { top: 260px; left: 161px; }
-  84%    { top: 280px; left: 132px; }
-  88%    { top: 273px; left: 100px; }
-  91%    { top: 253px; left:  91px; }
-  100%   { top: 170px; left:  95px; }
-}
-
-.luigi-circuit-lap-2 {
-  position: absolute;
-  animation: luigicircuitlap2;
-  animation-fill-mode: forwards;
-  animation-timing-function: linear;
-}
-
-@keyframes luigicircuitlap2 {
-  0%     { top: 170px; left:  95px; }
-  18%    { top:  82px; left: 103px; }
-  28%    { top:  56px; left: 165px; }
-  34%    { top:  45px; left: 206px; }
-  43%    { top:  77px; left: 244px; }
-  65%    { top: 186px; left: 164px; }
-  80%    { top: 260px; left: 161px; }
-  84%    { top: 280px; left: 132px; }
-  88%    { top: 273px; left: 100px; }
-  91%    { top: 253px; left:  91px; }
-  100%   { top: 170px; left:  95px; }
-}
-
-.luigi-circuit-lap-3 {
-  position: absolute;
-  animation: luigicircuitlap3;
-  animation-fill-mode: forwards;
-  animation-timing-function: linear;
-}
-
-@keyframes luigicircuitlap3 {
+@keyframes luigicircuit {
   0%     { top: 170px; left:  95px; }
   18%    { top:  82px; left: 103px; }
   28%    { top:  56px; left: 165px; }
@@ -64,8 +22,6 @@
 .moo-moo-meadows {
   position: absolute;
   animation: moomoomeadows;
-  animation-duration: 30736ms;
-  animation-iteration-count: 3;
   animation-fill-mode: forwards;
   animation-timing-function: linear;
 }
@@ -91,8 +47,6 @@
 .mushroom-gorge {
   position: absolute;
   animation: mushroomgorge;
-  animation-duration: 39558ms;
-  animation-iteration-count: 3;
   animation-fill-mode: forwards;
   animation-timing-function: linear;
 }
