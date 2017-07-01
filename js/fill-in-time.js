@@ -1,9 +1,10 @@
 function enterTime() {
   $(".js-fill-in-time-button").on("click", function() {
-    var lap1 = prompt("Enter " + $(this).data("racer") + "'s" + " 1st lap time in milliseconds", "2000"),
+    var lap1 = prompt("Enter " + $(this).data("racer") + "'s" + " 1st lap time in milliseconds", "3000"),
         lap2 = prompt("Enter " + $(this).data("racer") + "'s" + " 2nd lap time in milliseconds", "2000"),
-        lap3 = prompt("Enter " + $(this).data("racer") + "'s" + " final lap time in milliseconds", "2000"),
-        lapCounter = 1;
+        lap3 = prompt("Enter " + $(this).data("racer") + "'s" + " final lap time in milliseconds", "1000"),
+        lapCounter = 1,
+        timeCounter = 1;
 
     $(".circuit-map").append("<img data-img=\"" + $(this).data("img") + "\" src=\"" + "img/circuits/heads/" + $(this).data("img") + ".png" + "\" class=\"" + "js-circuit" + "\">");
 
@@ -32,6 +33,19 @@ function enterTime() {
         }, parseInt(lap3));
       }, parseInt(lap2));
     }, parseInt(lap1));
+
+    function pad(val) { return val > 9 ? val : "0" + val; }
+      var interval = setInterval(function () {
+
+        $(".minutes").text(pad(parseInt(timeCounter / 6000, 10)));
+        $(".seconds").text(pad(parseInt(timeCounter / 100, 10) % 60));
+        $(".milliseconds").text(pad(++timeCounter % 100));
+    
+      }, 10);
+
+      setTimeout(function() {
+        clearInterval(interval);
+      }, parseInt(lap1) + parseInt(lap2) + parseInt(lap3));
 
   });
 };
