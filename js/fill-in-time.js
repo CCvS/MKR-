@@ -38,20 +38,20 @@ function enterTime() {
       return n.length >= width ? n : new Array(width - n.length + 1).join("0") + n;
     }
 
-    var end = new Date(), // TODO: Not 100% accurate
+    var startTime = new Date().getTime(), // FIXME: CPU time makes timer not 100% accurate
 
         _millisecond = 1,
         _second = 1000,
-        _minute = 60000,
+        _minute = _second * 60,
+        _hour = _minute * 60,
         timer;
 
     function timeCounter() {
-      var now = new Date(),
-          distance = now - end,
+      var timeCounter = new Date().getTime() - startTime,
 
-          minutes = Math.floor((distance % 3600000) / _minute),
-          seconds = Math.floor((distance % _minute) / _second),
-          milliseconds = Math.floor((distance % _second) / _millisecond);
+          minutes = Math.floor((timeCounter % _hour) / _minute),
+          seconds = Math.floor((timeCounter % _minute) / _second),
+          milliseconds = Math.floor((timeCounter % _second) / _millisecond);
 
       document.querySelector('.minutes').innerHTML = pad(minutes, 2);
       document.querySelector('.seconds').innerHTML = pad(seconds, 2);
