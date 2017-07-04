@@ -38,7 +38,8 @@ function enterTime() {
       return n.length >= width ? n : new Array(width - n.length + 1).join("0") + n;
     }
 
-    var startTime = new Date().getTime(), // FIXME: CPU time makes timer not 100% accurate
+    var startTime = new Date().getTime(),
+        totalTime = parseInt(lap1) + parseInt(lap2) + parseInt(lap3),
 
         _millisecond = 1,
         _second = 1000,
@@ -62,7 +63,15 @@ function enterTime() {
 
     setTimeout(function() {
       clearInterval(timer);
-    }, parseInt(lap1) + parseInt(lap2) + parseInt(lap3));
+
+      var minutes = Math.floor((totalTime % _hour) / _minute),
+          seconds = Math.floor((totalTime % _minute) / _second),
+          milliseconds = Math.floor((totalTime % _second) / _millisecond);
+
+      document.querySelector('.minutes').innerHTML = pad(minutes, 2);
+      document.querySelector('.seconds').innerHTML = pad(seconds, 2);
+      document.querySelector('.milliseconds').innerHTML = pad(milliseconds, 3);
+    }, totalTime);
 
   });
 };
