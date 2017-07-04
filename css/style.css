@@ -74,7 +74,7 @@ body {
 }
 
 .time-line-racers {
-  position: absolute;
+  position: relative;
   margin: 40px auto;
   background: #3a3a0a;
 
