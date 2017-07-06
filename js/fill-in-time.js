@@ -45,18 +45,26 @@ function enterTime() {
         _second = 1000,
         _minute = _second * 60,
         _hour = _minute * 60,
+        _day = _hour * 24,
         timer;
 
     function timeCounter() {
       var timeCounter = new Date().getTime() - startTime,
 
+          days = Math.floor(timeCounter / _day),
+          hours = Math.floor((timeCounter % _day) / _hour),
           minutes = Math.floor((timeCounter % _hour) / _minute),
           seconds = Math.floor((timeCounter % _minute) / _second),
           milliseconds = Math.floor((timeCounter % _second) / _millisecond);
 
-      document.querySelector('.minutes').innerHTML = pad(minutes, 2);
-      document.querySelector('.seconds').innerHTML = pad(seconds, 2);
-      document.querySelector('.milliseconds').innerHTML = pad(milliseconds, 3);
+      document.querySelector('.table-hrs').innerHTML = pad(hours, 1);
+      document.querySelector('.table-min').innerHTML = pad(minutes, 2);
+      document.querySelector('.table-sec').innerHTML = pad(seconds, 2);
+      document.querySelector('.table-mil').innerHTML = pad(milliseconds, 3);
+
+      document.querySelector('.timer-min').innerHTML = pad(minutes, 2);
+      document.querySelector('.timer-sec').innerHTML = pad(seconds, 2);
+      document.querySelector('.timer-mil').innerHTML = pad(milliseconds, 3);
     }
 
     timer = setInterval(timeCounter, 1);
@@ -64,13 +72,20 @@ function enterTime() {
     setTimeout(function() {
       clearInterval(timer);
 
-      var minutes = Math.floor((totalTime % _hour) / _minute),
+      var days = Math.floor(totalTime / _day),
+          hours = Math.floor((totalTime % _day) / _hour),
+          minutes = Math.floor((totalTime % _hour) / _minute),
           seconds = Math.floor((totalTime % _minute) / _second),
           milliseconds = Math.floor((totalTime % _second) / _millisecond);
 
-      document.querySelector('.minutes').innerHTML = pad(minutes, 2);
-      document.querySelector('.seconds').innerHTML = pad(seconds, 2);
-      document.querySelector('.milliseconds').innerHTML = pad(milliseconds, 3);
+      document.querySelector('.table-hrs').innerHTML = pad(hours, 1);
+      document.querySelector('.table-min').innerHTML = pad(minutes, 2);
+      document.querySelector('.table-sec').innerHTML = pad(seconds, 2);
+      document.querySelector('.table-mil').innerHTML = pad(milliseconds, 3);
+
+      document.querySelector('.timer-min').innerHTML = pad(minutes, 2);
+      document.querySelector('.timer-sec').innerHTML = pad(seconds, 2);
+      document.querySelector('.timer-mil').innerHTML = pad(milliseconds, 3);
     }, totalTime);
 
   });

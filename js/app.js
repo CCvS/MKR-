@@ -37,7 +37,10 @@ function updateHTML(table) {
     output += "<td class=\"" + fillInButton + "\" data-racer=\"" + racer.name + "\" data-img=\"" + racer.img + "\">" + racer.name + "</td>";
     output += "<td>" + racer.kart + "</td>";
     output += "<td>" + "0" + "</td>";
-    output += "<td>" + "0:00:00.000" + "</td>";
+    output += "<td>" + "<span class=\"" + "table-hrs" + "\">" + "0" + "</span>" + ":" +
+                       "<span class=\"" + "table-min" + "\">" + "00" + "</span>" + ":" +
+                       "<span class=\"" + "table-sec" + "\">" + "00" + "</span>" + "." +
+                       "<span class=\"" + "table-mil" + "\">" + "000" + "</span>" + "</td>";
     output += "<td>" + "+00:00.000" + "</td>";
     output += "</tr>\n";
   });
