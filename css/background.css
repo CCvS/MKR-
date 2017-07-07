@@ -1,0 +1,23 @@
+body {
+  overflow-x: hidden;
+  font-family: 'Cabin', sans-serif;
+  font-size: 12px;
+  line-height: 2em;
+  background: #ffffff url("../img/bg_w.jpg");
+  color: #ffffff;
+}
+
+.bg-element {
+  position: absolute;
+
+  background: url("../img/bg_element.png") center right no-repeat;
+  opacity: 0.07;
+
+  width: 569px;
+  height: 680px;
+
+  top: 5%;
+  right: 5%;
+
+  transform: rotate(4deg);
+}

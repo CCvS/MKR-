@@ -2,16 +2,10 @@
 function loadTimes(raceList) {
   raceList.forEach(function (race) {
 
-    if (!config.times[race.date]) { config.times[race.date] = []; }
-
     // The goals are a string instead of a numeric for some reason.
     // Probably as a potential gotcha in this test..
     config.times[race.date].push({
-      timeRacerId: race.timeRacerId,
-      totalHrs:    parseInt(race.totalHrs, 2),
-      totalMin:    parseInt(race.totalMin, 2),
-      totalSec:    parseInt(race.totalSec, 2),
-      totalMil:    parseInt(race.totalMil, 2)
+      timeRacerId: race.timeRacerId
     });
   });
 }
@@ -26,36 +20,6 @@ function playTimes() {
             var timeRacer = config.racers[race.timeRacerId];
 
             timeRacer.raced++;
-            timeRacer.hrs += race.totalHrs;
-            timeRacer.min += race.totalMin;
-            timeRacer.sec += race.totalSec;
-            timeRacer.mil += race.totalMil;
-
-            var timeMil = 1;
-            var timeSec = 1000;
-            var timeMin = timeSec * 60;
-            var timeHrs = timeMin * 60;
-
-            if (timeRacer.hrs > 23) {
-                // Hours
-                timeRacer.hrs * timeHrs % (timeRacer.hrs /= timeMin);
-                console.log("hrs");
-            }
-            if (timeRacer.min > 59) {
-                // Minutes
-                timeRacer.min * timeMin % (timeRacer.min /= timeSec);
-                console.log("min");
-            }
-            if (timeRacer.sec > 59) {
-                // Seconds
-                timeRacer.sec * timeSec % (timeRacer.sec /= timeMil);
-                console.log("sec");
-            }
-            if (timeRacer.mil > 999) {
-                // Milliseconds
-                timeRacer.mil * timeMil % (timeRacer.mil /= timeMil);
-                console.log("mil");
-            }
 
         });
 
@@ -88,13 +52,4 @@ function playTimes() {
     });
 
     return tablesByDate;
-}
-
-// Pads single digits to 2 digits long with leading zeros
-function pad(number) {
-    var str = "" + number;
-    while (str.length < 2) {
-        str = "0" + str;
-    }
-    return str;
 }

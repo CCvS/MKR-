@@ -1,0 +1,69 @@
+.time-line {
+  position: relative;
+  margin: 0 auto;
+
+  width: 100%;
+  height: 100px;
+}
+
+.time-line-racers {
+  position: relative;
+  margin: 40px auto;
+  background: #3a3a0a;
+
+  width: 100%;
+  height: 5px;
+
+  border: 1px solid #5a5a11;
+  -webkit-border-radius: 5px;
+     -moz-border-radius: 5px;
+          border-radius: 5px;
+}
+
+.bda, .blu, .bma, .bpe, .bir,
+.bow, .boj, .dai, .did, .don,
+.dry, .drb, .fun, .kin, .koo,
+.lui, .mar, .mii, .pea, .ros,
+.toa, .tod, .wal, .war, .yos {
+  position: absolute;
+
+  top: -15px;
+  left: 0%;
+
+  width: 30px;
+}
+
+.finish {
+  position: absolute;
+
+  top: -15px;
+  left: 100%;
+
+  width: 30px;
+}
+
+.bda {}
+.blu {}
+.bma {}
+.bpe {}
+.bir {}
+.bow {}
+.boj {}
+.dai {}
+.did {}
+.don {}
+.dry {}
+.drb {}
+.fun {}
+.kin {}
+.koo {}
+.lui {}
+.mar {}
+.mii {}
+.pea {}
+.ros {}
+.toa {}
+.tod {}
+.wal {}
+.war {}
+.yos {}

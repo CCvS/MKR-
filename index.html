@@ -7,22 +7,27 @@
     <title>MKR | Mario Kart Rally</title>
 
     <link rel="icon" href="img/favicon.ico" type="image/x-icon">
-
     <link href="https://fonts.googleapis.com/css?family=Cabin:400,700" rel="stylesheet">
-    <link href="css/bootstrap.min.css" rel="stylesheet">
-    <link href="css/animate.css"       rel="stylesheet">
-    <link href="css/normalize.css"     rel="stylesheet">
-    <link href="css/style.css"         rel="stylesheet">
-    <link href="css/circuits.css"      rel="stylesheet">
+
+    <link href="css/bootstrap.min.css"      rel="stylesheet">
+    <link href="css/animate.css"            rel="stylesheet">
+    <link href="css/normalize.css"          rel="stylesheet">
+    <link href="css/background.css"         rel="stylesheet">
+    <link href="css/wrapper.css"            rel="stylesheet">
+    <link href="css/header.css"             rel="stylesheet">
+    <link href="css/time-table.css"         rel="stylesheet">
+    <link href="css/time-line.css"          rel="stylesheet">
+    <link href="css/circuit-maps.css"       rel="stylesheet">
+    <link href="css/circuit-animations.css" rel="stylesheet">
   </head>
   <body>
 
-    <div class="site-header">
+    <div class="header">
       <img src="img/header.png" class="img-responsive">
     </div>
 
-    <div class="wrapper-background__border-top"></div>
-    <div class="wrapper-background">
+    <div class="wrapper__border-top"></div>
+    <div class="wrapper">
       <div class="bg-element"></div>
       <div class="container">
         <div class="col-xs-12 time-line">
@@ -93,21 +98,25 @@
                 <img src="img/arrow-right.png" class="img-responsive arrow-right">
               </div>
             </div>
-            <div class="circuit-time-table">
+            <div class="circuit-top-5-table">
             </div>
           </div>
         </div>
 
       </div>
     </div>
-    <div class="wrapper-background__border-bottom"></div>
+    <div class="wrapper__border-bottom"></div>
 
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/underscore.js/1.8.3/underscore-min.js"></script>
+
     <script src="js/app.js"></script>
-    <script src="js/underscore-min.js"></script>
-    <script src="js/racers-list.js"></script>
+    <script src="js/load/racers-list.js"></script>
+    <script src="js/load/circuits-list.js"></script>
+    <script src="js/circuit-navigator.js"></script>
     <script src="js/count-up-time.js"></script>
     <script src="js/sort-time-table.js"></script>
     <script src="js/fill-in-time.js"></script>
+
   </body>
 </html>

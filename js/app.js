@@ -1,8 +1,9 @@
 "use strict";
 
 var config = {
-    racers:  {},
-    times:   {}
+    racers:    {},
+    circuits:  {},
+    times:     {}
 };
 
 function loadRacers(racerList) {
@@ -11,7 +12,12 @@ function loadRacers(racerList) {
       id:         racer.id,
       img:        racer.img,
       name:       racer.name,
-      kart:       racer.kart
+      kart:       racer.kart,
+      raced:      racer.raced,
+      hrs:        racer.hrs,
+      min:        racer.min,
+      sec:        racer.sec,
+      mil:        racer.mil
     };
   });
 }
@@ -37,10 +43,13 @@ function updateHTML(table) {
     output += "<td class=\"" + fillInButton + "\" data-racer=\"" + racer.name + "\" data-img=\"" + racer.img + "\">" + racer.name + "</td>";
     output += "<td>" + racer.kart + "</td>";
     output += "<td>" + "0" + "</td>";
-    output += "<td>" + "<span class=\"" + "table-hrs" + "\">" + "0" + "</span>" + ":" +
-                       "<span class=\"" + "table-min" + "\">" + "00" + "</span>" + ":" +
-                       "<span class=\"" + "table-sec" + "\">" + "00" + "</span>" + "." +
-                       "<span class=\"" + "table-mil" + "\">" + "000" + "</span>" + "</td>";
+    output += "<td data-hrs=\"" + racer.hrs +
+               "\" data-min=\"" + racer.min +
+               "\" data-sec=\"" + racer.sec +
+               "\" data-mil=\"" + racer.mil + "\">" + "<span class=\"" + "table-hrs" + "\">" + racer.hrs + "</span>" + ":" +
+                                                      "<span class=\"" + "table-min" + "\">" + racer.min + "</span>" + ":" +
+                                                      "<span class=\"" + "table-sec" + "\">" + racer.sec + "</span>" + "." +
+                                                      "<span class=\"" + "table-mil" + "\">" + racer.mil + "</span>" + "</td>";
     output += "<td>" + "+00:00.000" + "</td>";
     output += "</tr>\n";
   });

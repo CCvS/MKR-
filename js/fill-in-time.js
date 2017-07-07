@@ -38,7 +38,7 @@ function enterTime() {
       return n.length >= width ? n : new Array(width - n.length + 1).join("0") + n;
     }
 
-    var startTime = new Date().getTime(),
+    var startTime = new Date(),
         totalTime = parseInt(lap1) + parseInt(lap2) + parseInt(lap3),
 
         _millisecond = 1,
@@ -49,7 +49,7 @@ function enterTime() {
         timer;
 
     function timeCounter() {
-      var timeCounter = new Date().getTime() - startTime,
+      var timeCounter = new Date() - startTime,
 
           days = Math.floor(timeCounter / _day),
           hours = Math.floor((timeCounter % _day) / _hour),

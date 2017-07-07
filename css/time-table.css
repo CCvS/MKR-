@@ -1,0 +1,78 @@
+table {
+  background: rgba(255, 255, 0, 0.05);
+  margin: 0 auto;
+
+  width: 100%;
+  font-weight: bold;
+
+  text-shadow: 0 0 5px #000;
+  border: 1px solid #373a0a;
+}
+
+thead {
+  background-color: #ffffff;
+  font-size: 14px;
+  color: #333;
+  border-bottom: 5px solid #06ebf3;
+  text-shadow: none;
+}
+
+td, th {
+  text-align: left;
+  padding: 0 10px;
+  width: 22px;
+}
+
+/* Zebra Strips */
+tr:nth-child(odd) {
+  background: rgba(255, 255, 0, 0.05);
+  border: 1px solid #5a5a11;
+}
+
+td:nth-child(1) {
+  text-align: right;
+  padding: 0 2px 0 0;
+  width: 22px;
+}
+
+td:nth-child(2) {
+  padding: 0;
+}
+
+td:nth-child(3) {
+  cursor: pointer;
+}
+
+tr { transition: all .1s ease-in-out; }
+tr:hover {
+  background: #06ebf3;
+  background: -moz-linear-gradient(top, #06ebf3 0%,#08a9af 50%,#04858c 51%,#06ebf3 100%);
+  background: -webkit-linear-gradient(top, #06ebf3 0%,#08a9af 50%,#04858c 51%,#06ebf3 100%);
+  background: linear-gradient(to bottom, #06ebf3 0%,#08a9af 50%,#04858c 51%,#06ebf3 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#06ebf3', endColorstr='#06ebf3',GradientType=0 );
+
+  transform: scale(1.05);
+}
+
+thead tr { transition: none; }
+thead tr:hover {
+  transform: none;
+  background: none;
+}
+
+/* Give the racer name a bit more width than strictly necessary */
+tr td:nth-child(3),
+tr th:nth-child(3) {
+  width: 150px;
+  padding-left: 5px;
+}
+
+tr td:nth-child(4),
+tr th:nth-child(4) {
+  width: 95px;
+  padding: 0 5px 0 0;
+}
+
+/* Background colors for racers moving up or down */
+tr.up   { background-color: rgba(64,255,64, 0.5); }
+tr.down { background-color: rgba(255,64,64, 0.5); }

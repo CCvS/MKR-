@@ -1,0 +1,33 @@
+.circuit-map {
+  background: url("../img/circuits/1-luigi-circuit.png") center center no-repeat;
+  background-size: 100%;
+  width: 360px;
+  height: 360px;
+}
+
+.circuit-name {
+  background: rgba(0, 0, 0, 0.45);
+  font-size: 24px;
+  line-height: 150%;
+  text-align: center;
+  text-transform: uppercase;
+
+  border: 2px solid #373a0a;
+  border-radius: 5px;
+}
+
+.lap-time {
+  font-size: 30px;
+  line-height: 125%;
+
+  margin: 143px auto 0;
+}
+
+.arrow-left,
+.arrow-right {
+  margin: 0 auto;
+  cursor: pointer;
+  transition: all .1s ease-in-out;
+}
+.arrow-left:hover,
+.arrow-right:hover { transform: scale(1.3); }
