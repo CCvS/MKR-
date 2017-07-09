@@ -1,9 +1,28 @@
 .circuit-map {
-  background: url("../img/circuits/1-luigi-circuit.png") center center no-repeat;
-  background-size: 100%;
   width: 360px;
   height: 360px;
 }
+.animations {
+  width: 100%;
+  height: 100%;
+}
+.circuit-map__1-luigi-circuit, ._1-luigi-circuit,
+.circuit-map__2-moo-moo-meadows, ._2-moo-moo-meadows,
+.circuit-map__3-mushroom-gorge, ._3-mushroom-gorge {
+  width: 100%;
+  height: 100%;
+  display: none;
+}
+.circuit-map__1-luigi-circuit {
+  background: url("../img/circuits/1-luigi-circuit.png") center center no-repeat;
+}
+.circuit-map__2-moo-moo-meadows {
+  background: url("../img/circuits/2-moo-moo-meadows.png") center center no-repeat;
+}
+.circuit-map__3-mushroom-gorge {
+  background: url("../img/circuits/3-mushroom-gorge.png") center center no-repeat;
+}
+.active { display: block; }
 
 .circuit-name {
   background: rgba(0, 0, 0, 0.45);

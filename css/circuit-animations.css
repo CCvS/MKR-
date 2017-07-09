@@ -6,17 +6,17 @@
 }
 
 @keyframes luigicircuit {
-  0%     { top: 170px; left:  95px; }
-  18%    { top:  82px; left: 103px; }
-  28%    { top:  56px; left: 165px; }
-  34%    { top:  45px; left: 206px; }
-  43%    { top:  77px; left: 244px; }
-  65%    { top: 186px; left: 164px; }
-  80%    { top: 260px; left: 161px; }
-  84%    { top: 280px; left: 132px; }
-  88%    { top: 273px; left: 100px; }
-  91%    { top: 253px; left:  91px; }
-  100%   { top: 170px; left:  95px; }
+  0%     { top: 170px; left:  90px; }
+  18%    { top:  80px; left: 100px; }
+  28%    { top:  52px; left: 165px; }
+  34%    { top:  38px; left: 211px; }
+  43%    { top:  70px; left: 244px; }
+  65%    { top: 186px; left: 165px; }
+  80%    { top: 260px; left: 160px; }
+  84%    { top: 285px; left: 132px; }
+  88%    { top: 273px; left:  94px; }
+  91%    { top: 253px; left:  86px; }
+  100%   { top: 170px; left:  90px; }
 }
 
 .moo-moo-meadows {

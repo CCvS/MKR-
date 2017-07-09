@@ -1,9 +1,7 @@
 "use strict";
 
 var config = {
-    racers:    {},
-    circuits:  {},
-    times:     {}
+    racers:  {}
 };
 
 function loadRacers(racerList) {
@@ -42,7 +40,7 @@ function updateHTML(table) {
     output += "<td>" + "<img src=\"" + "img/time-table/" + racer.img + ".png" + "\">" + "</td>";
     output += "<td class=\"" + fillInButton + "\" data-racer=\"" + racer.name + "\" data-img=\"" + racer.img + "\">" + racer.name + "</td>";
     output += "<td>" + racer.kart + "</td>";
-    output += "<td>" + "0" + "</td>";
+    output += "<td>" + racer.raced + "</td>";
     output += "<td data-hrs=\"" + racer.hrs +
                "\" data-min=\"" + racer.min +
                "\" data-sec=\"" + racer.sec +

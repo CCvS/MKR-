@@ -83,19 +83,29 @@
                 <span class="timer-min">00</span>:<span class="timer-sec">00</span>.<span class="timer-mil">000</span>
               </div>
             </div>
-            <div class="col-xs-8 circuit-map"></div>
+            <div class="col-xs-8 circuit-map">
+              <div class="animations">
+                <div class="circuit-map__1-luigi-circuit active"></div>
+                <div class="circuit-map__2-moo-moo-meadows"></div>
+                <div class="circuit-map__3-mushroom-gorge"></div>
+              </div>
+            </div>
           </div>
 
           <div class="bottom">
             <div class="circuit-name-nav">
               <div class="col-xs-2">
-                <img src="img/arrow-left.png" class="img-responsive arrow-left">
+                <img src="img/arrow-left.png" class="img-responsive arrow-left js-arrow" data-dir="left">
               </div>
               <div class="col-xs-8 circuit-name">
-                1. Luigi Circuit
+                <div class="animations">
+                  <div class="_1-luigi-circuit active">1. Luigi Circuit</div>
+                  <div class="_2-moo-moo-meadows">2. Moo Moo Meadows</div>
+                  <div class="_3-mushroom-gorge">3. Mushroom Gorge</div>
+                </div>
               </div>
               <div class="col-xs-2">
-                <img src="img/arrow-right.png" class="img-responsive arrow-right">
+                <img src="img/arrow-right.png" class="img-responsive arrow-right js-arrow" data-dir="right">
               </div>
             </div>
             <div class="circuit-top-5-table">
@@ -112,9 +122,7 @@
 
     <script src="js/app.js"></script>
     <script src="js/load/racers-list.js"></script>
-    <script src="js/load/circuits-list.js"></script>
     <script src="js/circuit-navigator.js"></script>
-    <script src="js/count-up-time.js"></script>
     <script src="js/sort-time-table.js"></script>
     <script src="js/fill-in-time.js"></script>
 
