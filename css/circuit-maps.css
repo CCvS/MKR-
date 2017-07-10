@@ -8,25 +8,173 @@
 }
 .circuit-map__1-luigi-circuit, ._1-luigi-circuit,
 .circuit-map__2-moo-moo-meadows, ._2-moo-moo-meadows,
-.circuit-map__3-mushroom-gorge, ._3-mushroom-gorge {
+.circuit-map__3-mushroom-gorge, ._3-mushroom-gorge,
+.circuit-map__4-toads-factory, ._4-toads-factory,
+.circuit-map__5-mario-circuit, ._5-mario-circuit,
+.circuit-map__6-coconut-mall, ._6-coconut-mall,
+.circuit-map__7-dks-snowboard-cross, ._7-dks-snowboard-cross,
+.circuit-map__8-warios-goldmine, ._8-warios-goldmine,
+.circuit-map__9-daisy-circuit, ._9-daisy-circuit,
+.circuit-map__10-koopa-cape, ._10-koopa-cape,
+.circuit-map__11-maple-treeway, ._11-maple-treeway,
+.circuit-map__12-grumble-volcano, ._12-grumble-volcano,
+.circuit-map__13-dry-dry-ruins, ._13-dry-dry-ruins,
+.circuit-map__14-moonview-highway, ._14-moonview-highway,
+.circuit-map__15-bowsers-castle, ._15-bowsers-castle,
+.circuit-map__16-rainbow-road, ._16-rainbow-road,
+.circuit-map__17-peach-beach-gcn, ._17-peach-beach-gcn,
+.circuit-map__18-yoshi-falls-ds, ._18-yoshi-falls-ds,
+.circuit-map__19-ghost-valley-2-snes, ._19-ghost-valley-2-snes,
+.circuit-map__20-mario-raceway-n64, ._20-mario-raceway-n64,
+.circuit-map__21-sherbet-land-n64, ._21-sherbet-land-n64,
+.circuit-map__22-shy-guy-beach-gba, ._22-shy-guy-beach-gba,
+.circuit-map__23-delfino-square-ds, ._23-delfino-square-ds,
+.circuit-map__24-waluigi-stadium-gcn, ._24-waluigi-stadium-gcn,
+.circuit-map__25-desert-hills-ds, ._25-desert-hills-ds,
+.circuit-map__26-bowser-castle-3-gba, ._26-bowser-castle-3-gba,
+.circuit-map__27-dks-jungle-parkway-n64, ._27-dks-jungle-parkway-n64,
+.circuit-map__28-mario-circuit-gcn, ._28-mario-circuit-gcn,
+.circuit-map__29-mario-circuit-3-snes, ._29-mario-circuit-3-snes,
+.circuit-map__30-peach-gardens-ds, ._30-peach-gardens-ds,
+.circuit-map__31-dk-mountain-gcn, ._31-dk-mountain-gcn,
+.circuit-map__32-bowsers-castle-n64, ._32-bowsers-castle-n64 {
   width: 100%;
   height: 100%;
   display: none;
 }
 .circuit-map__1-luigi-circuit {
   background: url("../img/circuits/1-luigi-circuit.png") center center no-repeat;
+  background-size: 100%;
 }
 .circuit-map__2-moo-moo-meadows {
   background: url("../img/circuits/2-moo-moo-meadows.png") center center no-repeat;
+  background-size: 100%;
 }
 .circuit-map__3-mushroom-gorge {
   background: url("../img/circuits/3-mushroom-gorge.png") center center no-repeat;
+  background-size: 100%;
+}
+.circuit-map__4-toads-factory {
+  background: url("../img/circuits/4-toads-factory.png") center center no-repeat;
+  background-size: 100%;
+}
+.circuit-map__5-mario-circuit {
+  background: url("../img/circuits/5-mario-circuit.png") center center no-repeat;
+  background-size: 100%;
+}
+.circuit-map__6-coconut-mall {
+  background: url("../img/circuits/6-coconut-mall.png") center center no-repeat;
+  background-size: 100%;
+}
+.circuit-map__7-dks-snowboard-cross {
+  background: url("../img/circuits/7-dks-snowboard-cross.png") center center no-repeat;
+  background-size: 100%;
+}
+.circuit-map__8-warios-goldmine {
+  background: url("../img/circuits/8-warios-goldmine.png") center center no-repeat;
+  background-size: 100%;
+}
+.circuit-map__9-daisy-circuit {
+  background: url("../img/circuits/9-daisy-circuit.png") center center no-repeat;
+  background-size: 100%;
+}
+.circuit-map__10-koopa-cape {
+  background: url("../img/circuits/10-koopa-cape.png") center center no-repeat;
+  background-size: 100%;
+}
+.circuit-map__11-maple-treeway {
+  background: url("../img/circuits/11-maple-treeway.png") center center no-repeat;
+  background-size: 100%;
+}
+.circuit-map__12-grumble-volcano {
+  background: url("../img/circuits/12-grumble-volcano.png") center center no-repeat;
+  background-size: 100%;
+}
+.circuit-map__13-dry-dry-ruins {
+  background: url("../img/circuits/13-dry-dry-ruins.png") center center no-repeat;
+  background-size: 100%;
+}
+.circuit-map__14-moonview-highway {
+  background: url("../img/circuits/14-moonview-highway.png") center center no-repeat;
+  background-size: 100%;
+}
+.circuit-map__15-bowsers-castle {
+  background: url("../img/circuits/15-bowsers-castle.png") center center no-repeat;
+  background-size: 100%;
+}
+.circuit-map__16-rainbow-road {
+  background: url("../img/circuits/16-rainbow-road.png") center center no-repeat;
+  background-size: 100%;
+}
+.circuit-map__17-peach-beach-gcn {
+  background: url("../img/circuits/17-peach-beach-gcn.png") center center no-repeat;
+  background-size: 100%;
+}
+.circuit-map__18-yoshi-falls-ds {
+  background: url("../img/circuits/18-yoshi-falls-ds.png") center center no-repeat;
+  background-size: 100%;
+}
+.circuit-map__19-ghost-valley-2-snes {
+  background: url("../img/circuits/19-ghost-valley-2-snes.png") center center no-repeat;
+  background-size: 100%;
+}
+.circuit-map__20-mario-raceway-n64 {
+  background: url("../img/circuits/20-mario-raceway-n64.png") center center no-repeat;
+  background-size: 100%;
+}
+.circuit-map__21-sherbet-land-n64 {
+  background: url("../img/circuits/21-sherbet-land-n64.png") center center no-repeat;
+  background-size: 100%;
+}
+.circuit-map__22-shy-guy-beach-gba {
+  background: url("../img/circuits/22-shy-guy-beach-gba.png") center center no-repeat;
+  background-size: 100%;
+}
+.circuit-map__23-delfino-square-ds {
+  background: url("../img/circuits/23-delfino-square-ds.png") center center no-repeat;
+  background-size: 100%;
+}
+.circuit-map__24-waluigi-stadium-gcn {
+  background: url("../img/circuits/24-waluigi-stadium-gcn.png") center center no-repeat;
+  background-size: 100%;
+}
+.circuit-map__25-desert-hills-ds {
+  background: url("../img/circuits/25-desert-hills-ds.png") center center no-repeat;
+  background-size: 100%;
+}
+.circuit-map__26-bowser-castle-3-gba {
+  background: url("../img/circuits/26-bowser-castle-3-gba.png") center center no-repeat;
+  background-size: 100%;
+}
+.circuit-map__27-dks-jungle-parkway-n64 {
+  background: url("../img/circuits/27-dks-jungle-parkway-n64.png") center center no-repeat;
+  background-size: 100%;
+}
+.circuit-map__28-mario-circuit-gcn {
+  background: url("../img/circuits/28-mario-circuit-gcn.png") center center no-repeat;
+  background-size: 100%;
+}
+.circuit-map__29-mario-circuit-3-snes {
+  background: url("../img/circuits/29-mario-circuit-3-snes.png") center center no-repeat;
+  background-size: 100%;
+}
+.circuit-map__30-peach-gardens-ds {
+  background: url("../img/circuits/30-peach-gardens-ds.png") center center no-repeat;
+  background-size: 100%;
+}
+.circuit-map__31-dk-mountain-gcn {
+  background: url("../img/circuits/31-dk-mountain-gcn.png") center center no-repeat;
+  background-size: 100%;
+}
+.circuit-map__32-bowsers-castle-n64 {
+  background: url("../img/circuits/32-bowsers-castle-n64.png") center center no-repeat;
+  background-size: 100%;
 }
 .active { display: block; }
 
 .circuit-name {
   background: rgba(0, 0, 0, 0.45);
-  font-size: 24px;
+  font-size: 23px;
   line-height: 150%;
   text-align: center;
   text-transform: uppercase;
