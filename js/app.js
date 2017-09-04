@@ -1,32 +1,24 @@
 "use strict";
+function pad(n, width) {
+  n = n + '';
+  return n.length >= width ? n : new Array(width - n.length + 1).join("0") + n;
+}
 
 var config = {
     racers:  {}
 };
 
 function loadRacers(racerList) {
-  racerList.forEach(function (racer) {
-    config.racers[racer.id] = {
-      id:         racer.id,
-      img:        racer.img,
-      name:       racer.name,
-      kart:       racer.kart,
-      raced:      racer.raced,
-      hrs:        racer.hrs,
-      min:        racer.min,
-      sec:        racer.sec,
-      mil:        racer.mil
-    };
-  });
+  config.racers = racerList
 }
 
-var position = $('.time-table tr').length;
+function updateHTML(racers) {
+  racers = sortTimeTable();
+  var output = "", position = 0;
 
-function updateHTML(table) {
-  var output = "";
   var fillInButton = "js-fill-in-time-button";
 
-  table.forEach(function (racer) {
+  racers.forEach(function (racer) {
     var classList = "";
     if (racer.movement === "up") {
       classList = "animated fadeInUp up";
@@ -35,19 +27,23 @@ function updateHTML(table) {
     }
 
     // TODO: Variables to count TIME + difference between racers
-    output += "<tr class=\"" + classList + "\">";
-    output += "<td>" + position++ + "." + "</td>";
-    output += "<td>" + "<img src=\"" + "img/time-table/" + racer.img + ".png" + "\">" + "</td>";
-    output += "<td class=\"" + fillInButton + "\" data-racer=\"" + racer.name + "\" data-img=\"" + racer.img + "\">" + racer.name + "</td>";
+    output += "<tr class=\"" + fillInButton + " " + classList +
+          "\" data-racer=\"" + racer.name +
+            "\" data-img=\"" + racer.img +
+            "\" data-id=\"" + racer.id +
+            "\" data-hrs=\"" + racer.hrs +
+            "\" data-min=\"" + racer.min +
+            "\" data-sec=\"" + racer.sec +
+            "\" data-mil=\"" + racer.mil + "\">";
+    output += "<td>" + ++position + ".</td>";
+    output += "<td>" + "<img src=\"" + "img/time-table/" + racer.img + ".png\"</td>";
+    output += "<td>" + racer.name + "</td>";
     output += "<td>" + racer.kart + "</td>";
     output += "<td>" + racer.raced + "</td>";
-    output += "<td data-hrs=\"" + racer.hrs +
-               "\" data-min=\"" + racer.min +
-               "\" data-sec=\"" + racer.sec +
-               "\" data-mil=\"" + racer.mil + "\">" + "<span class=\"" + "table-hrs" + "\">" + racer.hrs + "</span>" + ":" +
-                                                      "<span class=\"" + "table-min" + "\">" + racer.min + "</span>" + ":" +
-                                                      "<span class=\"" + "table-sec" + "\">" + racer.sec + "</span>" + "." +
-                                                      "<span class=\"" + "table-mil" + "\">" + racer.mil + "</span>" + "</td>";
+    output += "<td>" + "<span class=\"" + "table-hrs" + "\">" + pad(racer.hrs, 1) + "</span>" + ":" +
+                       "<span class=\"" + "table-min" + "\">" + pad(racer.min, 2) + "</span>" + ":" +
+                       "<span class=\"" + "table-sec" + "\">" + pad(racer.sec, 2) + "</span>" + "." +
+                       "<span class=\"" + "table-mil" + "\">" + pad(racer.mil, 3) + "</span>" + "</td>";
     output += "<td>" + "+00:00.000" + "</td>";
     output += "</tr>\n";
   });
@@ -56,18 +52,11 @@ function updateHTML(table) {
 }
 
 function bootstrap() {
-  var initialTable = [];
-  for (var i = 1; i < 26; i++) {
-    initialTable.push(config.racers[i]);
-  }
-
-  initialTable.sort(function (a, b) {
+  config.racers.sort(function (a, b) {
     if (a.name < b.name) { return -1; }
     if (a.name > b.name) { return 1;  }
     return 0;
   });
-
-  return initialTable;
 }
 
 function $$(expr) {
@@ -79,6 +68,6 @@ function $$(expr) {
 }
 
 window.onload = function () {
-    updateHTML(bootstrap());
-    enterTime();
+  bootstrap();
+  updateHTML();
 };

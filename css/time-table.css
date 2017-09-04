@@ -39,11 +39,10 @@ td:nth-child(2) {
   padding: 0;
 }
 
-td:nth-child(3) {
+tr {
+  transition: all .1s ease-in-out;
   cursor: pointer;
 }
-
-tr { transition: all .1s ease-in-out; }
 tr:hover {
   background: #06ebf3;
   background: -moz-linear-gradient(top, #06ebf3 0%,#08a9af 50%,#04858c 51%,#06ebf3 100%);
