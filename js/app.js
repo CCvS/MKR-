@@ -5,11 +5,15 @@ function pad(n, width) {
 }
 
 var config = {
-    racers:  {}
+  racers:    {},
+  circuits:  {}
 };
 
 function loadRacers(racerList) {
   config.racers = racerList
+}
+function loadCircuits(circuitList) {
+  config.circuits = circuitList
 }
 
 function updateHTML(racers) {
@@ -23,7 +27,7 @@ function updateHTML(racers) {
     if (racer.movement === "up") {
       classList = "animated fadeInUp up";
     } else if (racer.movement === "down") {
-      classList = "animated fadeInDown down";
+      classList = "animated fadeInUp down";
     }
 
     // TODO: Variables to count TIME + difference between racers
@@ -36,14 +40,14 @@ function updateHTML(racers) {
             "\" data-sec=\"" + racer.sec +
             "\" data-mil=\"" + racer.mil + "\">";
     output += "<td>" + ++position + ".</td>";
-    output += "<td>" + "<img src=\"" + "img/time-table/" + racer.img + ".png\"</td>";
+    output += "<td>" + "<img src=\"" + "img/time-table/" + racer.img + ".png\"></td>";
     output += "<td>" + racer.name + "</td>";
     output += "<td>" + racer.kart + "</td>";
     output += "<td>" + racer.raced + "</td>";
-    output += "<td>" + "<span class=\"" + "table-hrs" + "\">" + pad(racer.hrs, 1) + "</span>" + ":" +
-                       "<span class=\"" + "table-min" + "\">" + pad(racer.min, 2) + "</span>" + ":" +
-                       "<span class=\"" + "table-sec" + "\">" + pad(racer.sec, 2) + "</span>" + "." +
-                       "<span class=\"" + "table-mil" + "\">" + pad(racer.mil, 3) + "</span>" + "</td>";
+    output += "<td>" + "<span>" + pad(racer.hrs, 1) + "</span>:" +
+                       "<span>" + pad(racer.min, 2) + "</span>:" +
+                       "<span>" + pad(racer.sec, 2) + "</span>." +
+                       "<span>" + pad(racer.mil, 3) + "</span></td>";
     output += "<td>" + "+00:00.000" + "</td>";
     output += "</tr>\n";
   });
@@ -51,23 +55,14 @@ function updateHTML(racers) {
   $$("table > tbody").innerHTML = output;
 }
 
-function bootstrap() {
-  config.racers.sort(function (a, b) {
-    if (a.name < b.name) { return -1; }
-    if (a.name > b.name) { return 1;  }
-    return 0;
-  });
-}
-
 function $$(expr) {
   if (document.querySelectorAll(expr).length === 1) {
-      return document.querySelectorAll(expr)[0];
+    return document.querySelectorAll(expr)[0];
   } else {
-      return document.querySelectorAll(expr);
+    return document.querySelectorAll(expr);
   }
 }
 
 window.onload = function () {
-  bootstrap();
   updateHTML();
 };

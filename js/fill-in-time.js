@@ -14,24 +14,28 @@ $(document).on("click", ".js-fill-in-time-button", function() {
 
   racer.raced++;
 
-  doAnimate("luigi-circuit", parseInt(lap1));
+  doAnimate(circuit, parseInt(lap1));
   $(".js-lap-counter").text(lapCounter);
   console.log("Lap 1: " + lap1);
 
   setTimeout(function() {
-    doAnimate("luigi-circuit", parseInt(lap2));
+    doAnimate(circuit, parseInt(lap2));
     console.log("Lap 2: " + lap2);
     lapCounter++;
     $(".js-lap-counter").text(lapCounter);
 
     setTimeout(function() {
-      doAnimate("luigi-circuit", parseInt(lap3));
+      doAnimate(circuit, parseInt(lap3));
       console.log("Final lap: " + lap3);
       lapCounter++;
       $(".js-lap-counter").text(lapCounter);
 
       setTimeout(function() {
         $(".circuit-map img").fadeOut(2000);
+
+        setTimeout(function() {
+          $(".circuit-map img").remove();
+        }, 2000);
       }, parseInt(lap3));
     }, parseInt(lap2));
   }, parseInt(lap1));

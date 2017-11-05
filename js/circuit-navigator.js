@@ -1,3 +1,6 @@
+var circuitId = $(this).data('animation'),
+    circuit = config.circuits[0].animation;
+
 $(function() {
   $('.animations div:first-child').addClass('active');
 
@@ -11,10 +14,14 @@ function updateClass (direction) {
 
   if (direction == 'left' && current.index() > 0) {
     current.removeClass('active');
+    current.removeClass(circuit);
     current.prev().addClass('active');
+    current.prev().addClass(circuit);
   }
   else if (direction == 'right' && current.index() < $('.animations div:last-child').index()) {
     current.removeClass('active');
+    current.removeClass(circuit);
     current.next().addClass('active');
+    current.next().addClass(circuit);
   };
 };
