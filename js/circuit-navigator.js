@@ -9,6 +9,8 @@ $(function() {
   });
 });
 
+// FIXME circuit-navigator should give us the correct race animation
+
 function updateClass (direction) {
   var current = $('.animations .active');
 
