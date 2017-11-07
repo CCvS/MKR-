@@ -30,6 +30,14 @@ function updateHTML(racers) {
       classList = "animated fadeInUp down";
     }
 
+// TODO: Change 'change' to be -1, 0, 1 using the same comparison as in sort-time-table
+    if (racer.change == 1) {
+      classList += "up";
+    }
+    if (racer.change == -1) {
+      classList += "down";
+    }
+
     // TODO: Variables to count TIME + difference between racers
     output += "<tr class=\"" + fillInButton + " " + classList +
           "\" data-racer=\"" + racer.name +

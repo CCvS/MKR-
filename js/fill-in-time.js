@@ -12,8 +12,6 @@ $(document).on("click", ".js-fill-in-time-button", function() {
     return;
   }
 
-  racer.raced++;
-
   doAnimate(circuit, parseInt(lap1));
   $(".js-lap-counter").text(lapCounter);
   console.log("Lap 1: " + lap1);
@@ -48,7 +46,35 @@ $(document).on("click", ".js-fill-in-time-button", function() {
     timer,
     racerOldTotalTime = (racer.totalTime || 0),
     totalTime = parseInt(lap1) + parseInt(lap2) + parseInt(lap3);
-  racer.totalTime = (racer.totalTime || 0) + totalTime;
+
+  changeRacersWithDiff(function () {
+    racer.totalTime = (racer.totalTime || 0) + totalTime;
+    racer.raced++;
+  })
+
+  function changeRacersWithDiff (func) {
+    var racersBefore = JSON.parse(JSON.stringify(sortTimeTable()))
+    console.log(racersBefore.map(r => r.id))
+    func()
+    var index = 0
+    console.log(racersBefore.map(r => r.id), sortTimeTable().map(r => r.id))
+    sortTimeTable().map(function (racer) {
+      var currentIndex = index++
+      var oldIndex = racersBefore.findIndex(bracer => bracer.id === racer.id)
+
+      console.log(currentIndex, oldIndex)
+
+      racer.change = change(currentIndex, oldIndex)
+
+      return racer
+    })
+  }
+
+  function change (currentIndex, oldIndex) {
+    if (currentIndex < oldIndex) { return  1;  }
+    if (currentIndex > oldIndex) { return  -1; }
+    return 0;
+  }
 
   /**
    * TODO:
@@ -83,11 +109,11 @@ $(document).on("click", ".js-fill-in-time-button", function() {
 
 });
 
-function doAnimate(animationName, animationDuration) {
+function doAnimate(circuit, animationDuration) {
   var $circuit = $('.js-circuit');
-  $circuit.removeClass(animationName);
+  $circuit.removeClass(circuit.animation);
 
   requestAnimationFrame(function () {
-    $circuit.addClass(animationName).css("animation-duration", animationDuration + "ms");
+    $circuit.addClass(circuit.animation).css("animation-duration", animationDuration + "ms");
   });
 }
