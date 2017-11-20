@@ -24,22 +24,16 @@ function updateHTML(racers) {
 
   racers.forEach(function (racer) {
     var classList = "";
-    if (racer.movement === "up") {
-      classList = "animated fadeInUp up";
-    } else if (racer.movement === "down") {
-      classList = "animated fadeInUp down";
-    }
 
 // TODO: Change 'change' to be -1, 0, 1 using the same comparison as in sort-time-table
     if (racer.change == 1) {
       classList += "up";
-    }
-    if (racer.change == -1) {
+    } else if (racer.change == -1) {
       classList += "down";
     }
 
     // TODO: Variables to count TIME + difference between racers
-    output += "<tr class=\"" + fillInButton + " " + classList +
+    output += "<tr class=\"" + fillInButton + " " + "button" + " " + classList +
           "\" data-racer=\"" + racer.name +
             "\" data-img=\"" + racer.img +
             "\" data-id=\"" + racer.id +

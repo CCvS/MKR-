@@ -16,6 +16,9 @@ $(document).on("click", ".js-fill-in-time-button", function() {
   $(".js-lap-counter").text(lapCounter);
   console.log("Lap 1: " + lap1);
 
+  $(".js-fill-in-time-button").css("pointer-events", "none");
+  $(".js-arrow").css("pointer-events", "none");
+
   setTimeout(function() {
     doAnimate(circuit, parseInt(lap2));
     console.log("Lap 2: " + lap2);
@@ -30,6 +33,7 @@ $(document).on("click", ".js-fill-in-time-button", function() {
 
       setTimeout(function() {
         $(".circuit-map img").fadeOut(2000);
+        $(".js-arrow").css("pointer-events", "all");
 
         setTimeout(function() {
           $(".circuit-map img").remove();
@@ -53,20 +57,16 @@ $(document).on("click", ".js-fill-in-time-button", function() {
   })
 
   function changeRacersWithDiff (func) {
-    var racersBefore = JSON.parse(JSON.stringify(sortTimeTable()))
-    console.log(racersBefore.map(r => r.id))
+    var racersBefore = JSON.parse(JSON.stringify(sortTimeTable()));
     func()
-    var index = 0
-    console.log(racersBefore.map(r => r.id), sortTimeTable().map(r => r.id))
+    var index = 0;
     sortTimeTable().map(function (racer) {
-      var currentIndex = index++
-      var oldIndex = racersBefore.findIndex(bracer => bracer.id === racer.id)
+      var currentIndex = index++;
+      var oldIndex = racersBefore.findIndex(bracer => bracer.id === racer.id);
 
-      console.log(currentIndex, oldIndex)
+      racer.change = change(currentIndex, oldIndex);
 
-      racer.change = change(currentIndex, oldIndex)
-
-      return racer
+      return racer;
     })
   }
 

@@ -39,11 +39,11 @@ td:nth-child(2) {
   padding: 0;
 }
 
-tr {
+.button {
   transition: all .1s ease-in-out;
   cursor: pointer;
 }
-tr:hover {
+.button:hover {
   background: #06ebf3;
   background: -moz-linear-gradient(top, #06ebf3 0%,#08a9af 50%,#04858c 51%,#06ebf3 100%);
   background: -webkit-linear-gradient(top, #06ebf3 0%,#08a9af 50%,#04858c 51%,#06ebf3 100%);
@@ -73,5 +73,28 @@ tr th:nth-child(4) {
 }
 
 /* Background colors for racers moving up or down */
-tr.up   { background-color: rgba(64,255,64, 0.5); transform: scale(1.05); }
-tr.down { background-color: rgba(255,64,64, 0.5); transform: scale(1.05); }
+tr.up {
+  -webkit-animation-name: up; /* Safari 4.0 - 8.0 */
+  -webkit-animation-duration: .6s; /* Safari 4.0 - 8.0 */
+  animation-name: up;
+  animation-duration: .6s;
+}
+
+@keyframes up {
+  0%     { background-color: none; transition: none; transform: none; }
+  50%    { background-color: rgba(64,255,64, 0.5); transition: all .1s ease-in-out; transform: scale(1.05); }
+  100%   { background-color: none; transition: none; transform: none; }
+}
+
+tr.down {
+  -webkit-animation-name: down; /* Safari 4.0 - 8.0 */
+  -webkit-animation-duration: .6s; /* Safari 4.0 - 8.0 */
+  animation-name: down;
+  animation-duration: .6s;
+}
+
+@keyframes down {
+  0%     { background-color: none; transition: none; transform: none; }
+  50%    { background-color: rgba(255,64,64, 0.5); transition: all .1s ease-in-out; transform: scale(1.05); }
+  100%   { background-color: none; transition: none; transform: none; }
+}

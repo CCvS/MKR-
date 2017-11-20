@@ -16,7 +16,7 @@ loadRacers([
   {"id":15,"img":"koo","name":"Koopa Troopa","kart":"Baby Booster","raced":"0","hrs":"0","min":"0","sec":"0","mil":"0"},
   {"id":16,"img":"lui","name":"Luigi","kart":"Nostalgia","raced":"0","hrs":"0","min":"0","sec":"0","mil":"0"},
   {"id":17,"img":"mar","name":"Mario","kart":"Turbo Blooper","raced":"0","raced":"0","hrs":"0","min":"0","sec":"0","mil":"0"},
-  {"id":18,"img":"mii","name":"Carl","kart":"Dragonetti","raced":"0","hrs":"0","min":"0","sec":"0","mil":"0"},
+  {"id":18,"img":"mii","name":"Mii","kart":"Dragonetti","raced":"0","hrs":"0","min":"0","sec":"0","mil":"0"},
   {"id":19,"img":"pea","name":"Peach","kart":"B Dasher Mk 2","raced":"0","hrs":"0","min":"0","sec":"0","mil":"0"},
   {"id":20,"img":"ros","name":"Rosalina","kart":"Standard Kart L","raced":"0","hrs":"0","min":"0","sec":"0","mil":"0"},
   {"id":21,"img":"toa","name":"Toad","kart":"Rally Romper","raced":"0","hrs":"0","min":"0","sec":"0","mil":"0"},
