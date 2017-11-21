@@ -12,6 +12,22 @@ $(document).on("click", ".js-fill-in-time-button", function() {
     return;
   }
 
+  function progress() {
+    var bar = $(".progress-bar"),
+      width = 0,
+      id = setInterval(frame, 1);
+
+    function frame() {
+      if (width >= 100) {
+        clearInterval(id);
+      } else {
+        width++;
+        bar.css("width", width + "%");
+      }
+    }
+  }
+  progress();
+
   doAnimate(circuit, parseInt(lap1));
   $(".js-lap-counter").text(lapCounter);
   console.log("Lap 1: " + lap1);
@@ -33,10 +49,10 @@ $(document).on("click", ".js-fill-in-time-button", function() {
 
       setTimeout(function() {
         $(".circuit-map img").fadeOut(2000);
-        $(".js-arrow").css("pointer-events", "all");
 
         setTimeout(function() {
           $(".circuit-map img").remove();
+          $(".js-arrow").css("pointer-events", "all");
         }, 2000);
       }, parseInt(lap3));
     }, parseInt(lap2));

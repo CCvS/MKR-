@@ -6,6 +6,14 @@
   height: 100px;
 }
 
+.progress-bar {
+  background: none;
+
+  position: absolute;
+  left: 0;
+  height: 30px;
+}
+
 .time-line-racers {
   position: relative;
   margin: 40px auto;
@@ -28,7 +36,7 @@
   position: absolute;
 
   top: -15px;
-  left: 0%;
+  left: 100%;
 
   width: 30px;
 }

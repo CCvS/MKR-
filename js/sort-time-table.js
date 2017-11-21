@@ -1,4 +1,3 @@
-// Given an array of racer objects, returns a sorted array of the current league table
 function sortTimeTable() {
   return config.racers.sort(function (a, b) {
 
