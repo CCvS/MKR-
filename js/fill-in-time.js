@@ -15,7 +15,7 @@ $(document).on("click", ".js-fill-in-time-button", function() {
   function progress() {
     var bar = $(".progress-bar"),
       width = 0,
-      id = setInterval(frame, 1);
+      id = setInterval(frame, 60);
 
     function frame() {
       if (width >= 100) {
