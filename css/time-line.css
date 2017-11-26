@@ -6,12 +6,15 @@
   height: 100px;
 }
 
+.progress-bar-container {
+  position: absolute;
+}
+
 .progress-bar {
   background: none;
 
   position: absolute;
   left: 0;
-  height: 30px;
 }
 
 .time-line-racers {
@@ -58,29 +61,3 @@
 
   width: 30px;
 }
-
-.bda {left: 50%;}
-.blu {left: 8%;}
-.bma {left: 10%;}
-.bpe {left: 20%;}
-.bir {left: 34%;}
-.bow {left: 11%;}
-.boj {left: 100%;}
-.dai {left: 98%;}
-.did {left: 14%;}
-.don {left: 0%;}
-.dry {left: 95%;}
-.drb {left: 70%;}
-.fun {left: 65%;}
-.kin {left: 67%;}
-.koo {left: 45%;}
-.lui {left: 38%;}
-.mar {left: 58%;}
-.mii {left: 43%;}
-.pea {left: 12%;}
-.ros {left: 25%;}
-.toa {left: 80%;}
-.tod {left: 76%;}
-.wal {left: 78%;}
-.war {left: 80%;}
-.yos {left: 84%;}

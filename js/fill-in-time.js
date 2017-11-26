@@ -4,7 +4,11 @@ $(document).on("click", ".js-fill-in-time-button", function() {
       lap3 = prompt("Enter " + $(this).data("racer") + "'s final lap time in milliseconds", "1000"),
       lapCounter = 1,
       racerId = $(this).data('id'),
-      racer = config.racers.find(function(racer) { return racer.id == racerId });
+      racer = config.racers.find(function(racer) { return racer.id == racerId }),
+      totalTime = parseInt(lap1) + parseInt(lap2) + parseInt(lap3),
+      startTime = new Date(),
+      timeoutVal = Math.floor(totalTime/100),
+      width = 3.125;
 
   $(".circuit-map").append("<img data-img=\"" + $(this).data("img") + "\" src=\"" + "img/circuits/heads/" + $(this).data("img") + ".png" + "\" class=\"" + "js-circuit" + "\">");
 
@@ -12,22 +16,24 @@ $(document).on("click", ".js-fill-in-time-button", function() {
     return;
   }
 
-  function progress() {
-    var bar = $(".progress-bar"),
-      width = 0,
-      id = setInterval(frame, 60);
+  // TODO: Progress bar needs to make progress
+  function updateProgress(percentage) {
+    $(".progress-bar-container").css("width", width + "%");
+    $(".progress-bar").css("width", percentage + "%");
+  }
 
-    function frame() {
-      if (width >= 100) {
-        clearInterval(id);
-      } else {
-        width++;
-        bar.css("width", width + "%");
-      }
+  function animateUpdate() {
+    var endedTime = new Date();
+      timeDiff = endedTime.getTime() - startTime.getTime();
+      perc = Math.round((timeDiff/totalTime)*100);
+
+    if (perc <= 100) {
+      updateProgress(perc);
+      setTimeout(animateUpdate, timeoutVal);
     }
   }
-  progress();
 
+  animateUpdate();
   doAnimate(circuit, parseInt(lap1));
   $(".js-lap-counter").text(lapCounter);
   console.log("Lap 1: " + lap1);
@@ -58,14 +64,12 @@ $(document).on("click", ".js-fill-in-time-button", function() {
     }, parseInt(lap2));
   }, parseInt(lap1));
 
-  var startTime = new Date(),
-    _millisecond = 1,
+  var _millisecond = 1,
     _second = 1000,
     _minute = _second * 60,
     _hour = _minute * 60,
     timer,
-    racerOldTotalTime = (racer.totalTime || 0),
-    totalTime = parseInt(lap1) + parseInt(lap2) + parseInt(lap3);
+    racerOldTotalTime = (racer.totalTime || 0);
 
   changeRacersWithDiff(function () {
     racer.totalTime = (racer.totalTime || 0) + totalTime;

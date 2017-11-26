@@ -55,6 +55,7 @@ function updateHTML(racers) {
   });
 
   $$("table > tbody").innerHTML = output;
+
 }
 
 function $$(expr) {
