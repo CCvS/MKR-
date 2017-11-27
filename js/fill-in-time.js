@@ -8,17 +8,19 @@ $(document).on("click", ".js-fill-in-time-button", function() {
       totalTime = parseInt(lap1) + parseInt(lap2) + parseInt(lap3),
       startTime = new Date(),
       timeoutVal = Math.floor(totalTime/100),
+      progress = 0,
       width = 3.125;
-
-  $(".circuit-map").append("<img data-img=\"" + $(this).data("img") + "\" src=\"" + "img/circuits/heads/" + $(this).data("img") + ".png" + "\" class=\"" + "js-circuit" + "\">");
 
   if (lap1, lap2, lap3 === null) {
     return;
   }
 
-  // TODO: Progress bar needs to make progress
+  $(".circuit-map").append("<img data-img=\"" + $(this).data("img") + "\" src=\"" + "img/circuits/heads/" + $(this).data("img") + ".png" + "\" class=\"" + "js-circuit" + "\">");
+
+// TODO: Progress bar needs to make progress
+  $(".progress-bar-container").css("width", (progress+=width) + "%");
+
   function updateProgress(percentage) {
-    $(".progress-bar-container").css("width", width + "%");
     $(".progress-bar").css("width", percentage + "%");
   }
 
