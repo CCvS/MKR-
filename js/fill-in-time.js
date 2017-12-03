@@ -18,7 +18,7 @@ $(document).on("click", ".js-fill-in-time-button", function() {
   $(".circuit-map").append("<img data-img=\"" + $(this).data("img") + "\" src=\"" + "img/circuits/heads/" + $(this).data("img") + ".png" + "\" class=\"" + "js-circuit" + "\">");
 
 // TODO: Progress bar needs to make progress
-  $(".progress-bar-container").css("width", (progress+=width) + "%");
+  $(".progress-bar-container").css("width", (progress += width) + "%");
 
   function updateProgress(percentage) {
     $(".progress-bar").css("width", percentage + "%");
