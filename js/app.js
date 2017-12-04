@@ -79,6 +79,8 @@ function updateProgressBar() {
     $('.race-progress-bar__player[data-racer-id="' + racer.id + '"]');
 
     $('.race-progress-bar__player[data-racer-id="' + racer.id + '"]').attr('data-rounds', racer.raced)
+    $('.race-progress-bar__player').css("transition-property", "left");
+    $('.race-progress-bar__player').css("transition-duration", racer.totalTime + "ms");
   })
 }
 
