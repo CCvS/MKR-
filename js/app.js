@@ -56,6 +56,30 @@ function updateHTML(racers) {
 
   $$("table > tbody").innerHTML = output;
 
+  updateProgressBar();
+
+}
+
+var $progressBar = $('.js-race-progress-bar');
+
+function initProgressBar() {
+  // Draw initial players in progress-bar-container
+  config.racers.forEach(function (racer) {
+    $('<img />', {
+      src: 'img/time-line/' + racer.img + '.png',
+      class: 'race-progress-bar__player',
+      'data-rounds': racer.raced,
+      'data-racer-id': racer.id
+    }).appendTo($progressBar);
+  })
+}
+
+function updateProgressBar() {
+  config.racers.forEach(function (racer) {
+    $('.race-progress-bar__player[data-racer-id="' + racer.id + '"]');
+
+    $('.race-progress-bar__player[data-racer-id="' + racer.id + '"]').attr('data-rounds', racer.raced)
+  })
 }
 
 function $$(expr) {
@@ -68,4 +92,5 @@ function $$(expr) {
 
 window.onload = function () {
   updateHTML();
+  initProgressBar();
 };

@@ -17,25 +17,6 @@ $(document).on("click", ".js-fill-in-time-button", function() {
 
   $(".circuit-map").append("<img data-img=\"" + $(this).data("img") + "\" src=\"" + "img/circuits/heads/" + $(this).data("img") + ".png" + "\" class=\"" + "js-circuit" + "\">");
 
-// TODO: Progress bar needs to make progress
-  $(".progress-bar-container").css("width", (progress += width) + "%");
-
-  function updateProgress(percentage) {
-    $(".progress-bar").css("width", percentage + "%");
-  }
-
-  function animateUpdate() {
-    var endedTime = new Date();
-      timeDiff = endedTime.getTime() - startTime.getTime();
-      perc = Math.round((timeDiff/totalTime)*100);
-
-    if (perc <= 100) {
-      updateProgress(perc);
-      setTimeout(animateUpdate, timeoutVal);
-    }
-  }
-
-  animateUpdate();
   doAnimate(circuit, parseInt(lap1));
   $(".js-lap-counter").text(lapCounter);
   console.log("Lap 1: " + lap1);
