@@ -72,29 +72,15 @@ tr th:nth-child(4) {
   padding: 0 5px 0 0;
 }
 
-/* Background colors for racers moving up or down */
-tr.up {
-  -webkit-animation-name: up; /* Safari 4.0 - 8.0 */
-  -webkit-animation-duration: .6s; /* Safari 4.0 - 8.0 */
-  animation-name: up;
-  animation-duration: .6s;
+/* At the end of race, the racer will bounce 2 times */
+tr.bounce {
+  -webkit-animation-name: bounce; /* Safari 4.0 - 8.0 */
+  -webkit-animation-duration: 1.2s; /* Safari 4.0 - 8.0 */
+  animation-name: bounce;
+  animation-duration: 1.2s;
 }
 
-@keyframes up {
-  0%     { background-color: none; transition: none; transform: none; }
-  50%    { background-color: rgba(64,255,64, 0.5); transition: all .1s ease-in-out; transform: scale(1.05); }
-  100%   { background-color: none; transition: none; transform: none; }
-}
-
-tr.down {
-  -webkit-animation-name: down; /* Safari 4.0 - 8.0 */
-  -webkit-animation-duration: .6s; /* Safari 4.0 - 8.0 */
-  animation-name: down;
-  animation-duration: .6s;
-}
-
-@keyframes down {
-  0%     { background-color: none; transition: none; transform: none; }
-  50%    { background-color: rgba(255,64,64, 0.5); transition: all .1s ease-in-out; transform: scale(1.05); }
-  100%   { background-color: none; transition: none; transform: none; }
+@keyframes bounce {
+  0%, 50%, 100% { transition: none; transform: none; box-shadow: none; }
+  25%, 75% { transition: .1s ease-in-out; transform: scale(1.05); box-shadow: 0 0 40px 10px #05ebf3; }
 }

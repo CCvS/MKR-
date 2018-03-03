@@ -7,12 +7,13 @@
     <title>MKR | Mario Kart Rally</title>
 
     <link rel="icon" href="img/favicon.ico" type="image/x-icon">
-    <link href="https://fonts.googleapis.com/css?family=Cabin:400,700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Cabin:400,700|Monda:700" rel="stylesheet">
 
     <link href="css/bootstrap.min.css"      rel="stylesheet">
     <link href="css/animate.css"            rel="stylesheet">
     <link href="css/normalize.css"          rel="stylesheet">
     <link href="css/background.css"         rel="stylesheet">
+    <link href="css/custom_font.css"        rel="stylesheet">
     <link href="css/wrapper.css"            rel="stylesheet">
     <link href="css/header.css"             rel="stylesheet">
     <link href="css/time-table.css"         rel="stylesheet">
@@ -43,7 +44,7 @@
             <table>
               <thead>
                 <tr>
-                  <th></th><th></th><th>NAME</th><th>KART</th><th>R</th><th>TIME</th><th>DIFF</th>
+                  <th></th><th></th><th>NAME</th><th>KART</th><th>R</th><th>TIME</th>
                 </tr>
               </thead>
               <tbody>
@@ -56,45 +57,12 @@
           <div class="top">
             <div class="col-xs-4 lap-time">
               LAP <span class="js-lap-counter">1</span>/3
-              <div class="timer">
+              <div class="timer custom_font">
                 <span class="timer-min">00</span>:<span class="timer-sec">00</span>.<span class="timer-mil">000</span>
               </div>
             </div>
             <div class="col-xs-8 circuit-map">
-              <div class="animations">
-                <div class="circuit-map__1-luigi-circuit active"></div>
-                <div class="circuit-map__2-moo-moo-meadows"></div>
-                <div class="circuit-map__3-mushroom-gorge"></div>
-                <div class="circuit-map__4-toads-factory"></div>
-                <div class="circuit-map__5-mario-circuit"></div>
-                <div class="circuit-map__6-coconut-mall"></div>
-                <div class="circuit-map__7-dks-snowboard-cross"></div>
-                <div class="circuit-map__8-warios-goldmine"></div>
-                <div class="circuit-map__9-daisy-circuit"></div>
-                <div class="circuit-map__10-koopa-cape"></div>
-                <div class="circuit-map__11-maple-treeway"></div>
-                <div class="circuit-map__12-grumble-volcano"></div>
-                <div class="circuit-map__13-dry-dry-ruins"></div>
-                <div class="circuit-map__14-moonview-highway"></div>
-                <div class="circuit-map__15-bowsers-castle"></div>
-                <div class="circuit-map__16-rainbow-road"></div>
-                <div class="circuit-map__17-peach-beach-gcn"></div>
-                <div class="circuit-map__18-yoshi-falls-ds"></div>
-                <div class="circuit-map__19-ghost-valley-2-snes"></div>
-                <div class="circuit-map__20-mario-raceway-n64"></div>
-                <div class="circuit-map__21-sherbet-land-n64"></div>
-                <div class="circuit-map__22-shy-guy-beach-gba"></div>
-                <div class="circuit-map__23-delfino-square-ds"></div>
-                <div class="circuit-map__24-waluigi-stadium-gcn"></div>
-                <div class="circuit-map__25-desert-hills-ds"></div>
-                <div class="circuit-map__26-bowser-castle-3-gba"></div>
-                <div class="circuit-map__27-dks-jungle-parkway-n64"></div>
-                <div class="circuit-map__28-mario-circuit-gcn"></div>
-                <div class="circuit-map__29-mario-circuit-3-snes"></div>
-                <div class="circuit-map__30-peach-gardens-ds"></div>
-                <div class="circuit-map__31-dk-mountain-gcn"></div>
-                <div class="circuit-map__32-bowsers-castle-n64"></div>
-              </div>
+              <div class="animations js-nav"></div>
             </div>
           </div>
 
@@ -104,46 +72,15 @@
                 <img src="img/arrow-left.png" class="img-responsive arrow-left js-arrow" data-dir="left">
               </div>
               <div class="col-xs-8 circuit-name">
-                <div class="animations">
-                  <div class="_1-luigi-circuit active">1. Luigi Circuit</div>
-                  <div class="_2-moo-moo-meadows">2. Moo Moo Meadows</div>
-                  <div class="_3-mushroom-gorge">3. Mushroom Gorge</div>
-                  <div class="_4-toads-factory">4. Toad's Factory</div>
-                  <div class="_5-mario-circuit">5. Mario Circuit</div>
-                  <div class="_6-coconut-mall">6. Coconut Mall</div>
-                  <div class="_7-dks-snowboard-cross">7. DK's Snowboard Cross</div>
-                  <div class="_8-warios-goldmine">8. Wario's Goldmine</div>
-                  <div class="_9-daisy-circuit">9. Daisy Circuit</div>
-                  <div class="_10-koopa-cape">10. Koopa Cape</div>
-                  <div class="_11-maple-treeway">11. Maple Treeway</div>
-                  <div class="_12-grumble-volcano">12. Grumble Volcano</div>
-                  <div class="_13-dry-dry-ruins">13. Dry Dry Ruins</div>
-                  <div class="_14-moonview-highway">14. Moonview Highway</div>
-                  <div class="_15-bowsers-castle">15. Bowser's Castle</div>
-                  <div class="_16-rainbow-road">16. Rainbow Road</div>
-                  <div class="_17-peach-beach-gcn">17. Peach Beach GCN</div>
-                  <div class="_18-yoshi-falls-ds">18. Yoshi Falls DS</div>
-                  <div class="_19-ghost-valley-2-snes">19. Ghost Valley 2 SNES</div>
-                  <div class="_20-mario-raceway-n64">20. Mario Raceway N64</div>
-                  <div class="_21-sherbet-land-n64">21. Sherbet Land N64</div>
-                  <div class="_22-shy-guy-beach-gba">22. Shy Guy Beach GBA</div>
-                  <div class="_23-delfino-square-ds">23. Delfino Square DS</div>
-                  <div class="_24-waluigi-stadium-gcn">24. Waluigi Stadium GCN</div>
-                  <div class="_25-desert-hills-ds">25. Desert Hills DS</div>
-                  <div class="_26-bowser-castle-3-gba">26. Bowser Castle 3 GBA</div>
-                  <div class="_27-dks-jungle-parkway-n64">27. DK's Jungle Parkway N64</div>
-                  <div class="_28-mario-circuit-gcn">28. Mario Circuit GCN</div>
-                  <div class="_29-mario-circuit-3-snes">29. Mario Circuit 3 SNES</div>
-                  <div class="_30-peach-gardens-ds">30. Peach Gardens DS</div>
-                  <div class="_31-dk-mountain-gcn">31. DK Mountain GCN</div>
-                  <div class="_32-bowsers-castle-n64">32. Bowser's Castle N64</div>
-                </div>
+                <div class="tracks js-nav"></div>
               </div>
               <div class="col-xs-2">
                 <img src="img/arrow-right.png" class="img-responsive arrow-right js-arrow" data-dir="right">
               </div>
             </div>
-            <div class="circuit-top-5-table">
+            <div class="buttons">
+              <div class="save-button"></div>
+              <div class="reset-button"></div>
             </div>
           </div>
         </div>
@@ -158,8 +95,8 @@
     <script src="js/app.js"></script>
     <script src="js/load/racers-list.js"></script>
     <script src="js/sort-time-table.js"></script>
-    <script src="js/circuit-navigator.js"></script>
     <script src="js/fill-in-time.js"></script>
+    <script src="js/circuit-navigator.js"></script>
 
   </body>
 </html>

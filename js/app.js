@@ -25,14 +25,10 @@ function updateHTML(racers) {
   racers.forEach(function (racer) {
     var classList = "";
 
-// TODO: Change 'change' to be -1, 0, 1 using the same comparison as in sort-time-table
     if (racer.change == 1) {
-      classList += "up";
-    } else if (racer.change == -1) {
-      classList += "down";
+      classList += "bounce";
     }
 
-    // TODO: Variables to count TIME + difference between racers
     output += "<tr class=\"" + fillInButton + " " + "button" + " " + classList +
           "\" data-racer=\"" + racer.name +
             "\" data-img=\"" + racer.img +
@@ -46,11 +42,10 @@ function updateHTML(racers) {
     output += "<td>" + racer.name + "</td>";
     output += "<td>" + racer.kart + "</td>";
     output += "<td>" + racer.raced + "</td>";
-    output += "<td>" + "<span>" + pad(racer.hrs, 1) + "</span>:" +
-                       "<span>" + pad(racer.min, 2) + "</span>:" +
-                       "<span>" + pad(racer.sec, 2) + "</span>." +
-                       "<span>" + pad(racer.mil, 3) + "</span></td>";
-    output += "<td>" + "+00:00.000" + "</td>";
+    output += "<td class=\"" + "custom_font" + "\">" + "<span>" + pad(racer.hrs, 1) + "</span>:" +
+                                                       "<span>" + pad(racer.min, 2) + "</span>:" +
+                                                       "<span>" + pad(racer.sec, 2) + "</span>." +
+                                                       "<span>" + pad(racer.mil, 3) + "</span></td>";
     output += "</tr>\n";
   });
 
@@ -78,9 +73,9 @@ function updateProgressBar() {
   config.racers.forEach(function (racer) {
     $('.race-progress-bar__player[data-racer-id="' + racer.id + '"]');
 
-    $('.race-progress-bar__player[data-racer-id="' + racer.id + '"]').attr('data-rounds', racer.raced)
+    $('.race-progress-bar__player[data-racer-id="' + racer.id + '"]').attr('data-rounds', racer.raced);
     $('.race-progress-bar__player').css("transition-property", "left");
-    $('.race-progress-bar__player').css("transition-duration", racer.totalTime + "ms");
+    $('.race-progress-bar__player').css("transition-duration", "144000ms");
   })
 }
 
@@ -95,4 +90,5 @@ function $$(expr) {
 window.onload = function () {
   updateHTML();
   initProgressBar();
+  initCircuits();
 };

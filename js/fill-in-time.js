@@ -6,10 +6,7 @@ $(document).on("click", ".js-fill-in-time-button", function() {
       racerId = $(this).data('id'),
       racer = config.racers.find(function(racer) { return racer.id == racerId }),
       totalTime = parseInt(lap1) + parseInt(lap2) + parseInt(lap3),
-      startTime = new Date(),
-      timeoutVal = Math.floor(totalTime/100),
-      progress = 0,
-      width = 3.125;
+      startTime = new Date();
 
   if (lap1, lap2, lap3 === null) {
     return;
@@ -55,7 +52,7 @@ $(document).on("click", ".js-fill-in-time-button", function() {
     racerOldTotalTime = (racer.totalTime || 0);
 
   changeRacersWithDiff(function () {
-    racer.totalTime = (racer.totalTime || 0) + totalTime;
+    racer.totalTime = racerOldTotalTime + totalTime;
     racer.raced++;
   })
 
