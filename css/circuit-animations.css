@@ -161,3 +161,70 @@
   94%      { top: 296px; left:  93px; }
   96%      { top: 283px; left:  83px; }
 }
+
+.dks-snowboard-cross {
+  position: absolute;
+  animation: dkssnowboardcross;
+  animation-fill-mode: forwards;
+  animation-timing-function: linear;
+}
+
+@keyframes dkssnowboardcross {
+  0%, 100% { top:  19px; left: 161px; }
+  6%       { top:  23px; left: 191px; }
+  12%      { top:  56px; left: 195px; }
+  19%      { top: 284px; left: 195px; }
+  23%      { top: 305px; left: 203px; }
+  26%      { top: 304px; left: 216px; }
+  30%      { top: 283px; left: 226px; }
+  38%      { top: 231px; left: 227px; }
+  41%      { top: 214px; left: 230px; }
+  47%      { top: 190px; left: 205px; }
+  50%      { top: 159px; left: 171px; }
+  53%      { top: 139px; left: 144px; }
+  55%      { top: 126px; left: 142px; }
+  58%      { top: 122px; left: 153px; }
+  63%      { top: 138px; left: 173px; }
+  67%      { top: 132px; left: 187px; }
+  70%      { top: 116px; left: 185px; }
+  76%      { top:  93px; left: 144px; }
+  79%      { top:  86px; left: 135px; }
+  83%      { top:  60px; left: 130px; }
+  86%      { top:  50px; left: 119px; }
+  89%      { top:  34px; left:  96px; }
+  93%      { top:  20px; left: 105px; }
+}
+
+.warios-goldmine {
+  position: absolute;
+  animation: wariosgoldmine;
+  animation-fill-mode: forwards;
+  animation-timing-function: linear;
+}
+
+@keyframes wariosgoldmine {
+  0%, 100% { top: 250px; left:  70px; }
+  6%       { top: 204px; left:  87px; }
+  11%      { top: 171px; left: 107px; }
+  19%      { top:  87px; left: 108px; }
+  23%      { top:  69px; left:  89px; }
+  26%      { top:  54px; left:  74px; }
+  27%      { top:  48px; left:  73px; }
+  30%      { top:  38px; left:  93px; }
+  38%      { top:  37px; left: 151px; }
+  43%      { top:  50px; left: 185px; }
+  49%      { top:  44px; left: 228px; }
+  52%      { top:  54px; left: 249px; }
+  56%      { top:  80px; left: 252px; }
+  60%      { top: 108px; left: 252px; }
+  63%      { top: 148px; left: 254px; }
+  68%      { top: 191px; left: 261px; }
+  72%      { top: 216px; left: 248px; }
+  75%      { top: 240px; left: 235px; }
+  80%      { top: 286px; left: 218px; }
+  82%      { top: 291px; left: 201px; }
+  87%      { top: 279px; left: 162px; }
+  90%      { top: 277px; left: 143px; }
+  92%      { top: 276px; left: 100px; }
+  96%      { top: 272px; left:  75px; }
+}
