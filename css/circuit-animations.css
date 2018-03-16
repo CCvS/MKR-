@@ -123,3 +123,41 @@
   91%      { top: 265px; left: 144px; }
   95%      { top: 230px; left: 157px; }
 }
+
+.coconut-mall {
+  position: absolute;
+  animation: coconutmall;
+  animation-fill-mode: forwards;
+  animation-timing-function: linear;
+}
+
+@keyframes coconutmall {
+  0%, 100% { top: 247px; left:  81px; }
+  8%       { top: 193px; left:  82px; }
+  13%      { top: 163px; left:  85px; }
+  17%      { top: 124px; left:  85px; }
+  24%      { top:  69px; left:  90px; }
+  27%      { top:  52px; left:  99px; }
+  31%      { top:  49px; left: 147px; }
+  35%      { top:  38px; left: 185px; }
+  38%      { top:  38px; left: 226px; }
+  40%      { top:  50px; left: 252px; }
+  42%      { top:  66px; left: 251px; }
+  46%      { top:  78px; left: 218px; }
+  49%      { top:  69px; left: 195px; }
+  51%      { top:  69px; left: 176px; }
+  55%      { top:  83px; left: 130px; }
+  57%      { top:  95px; left: 113px; }
+  59%      { top: 108px; left: 115px; }
+  62%      { top: 123px; left: 134px; }
+  64%      { top: 119px; left: 163px; }
+  67%      { top: 123px; left: 193px; }
+  69%      { top: 139px; left: 207px; }
+  75%      { top: 191px; left: 206px; }
+  78%      { top: 238px; left: 205px; }
+  84%      { top: 282px; left: 202px; }
+  86%      { top: 295px; left: 188px; }
+  90%      { top: 287px; left: 150px; }
+  94%      { top: 296px; left:  93px; }
+  96%      { top: 283px; left:  83px; }
+}

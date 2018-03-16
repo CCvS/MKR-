@@ -4,9 +4,10 @@ function initCircuits() {
     $('<div />', {
       class: 'circuit-map__' + track.id + '-' + track.animation
     }).appendTo($('.animations'));
+
     $('<div />', {
       class: '_' + track.id + '-' + track.animation,
-      html: track.id + ". " + track.name
+      text: track.id + ". " + track.name
     }).appendTo($('.tracks'));
 
     $('.js-nav div:first-child').addClass('active');

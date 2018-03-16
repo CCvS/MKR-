@@ -93,9 +93,6 @@ $(document).on("click", ".js-fill-in-time-button", function() {
     racer.mil = milliseconds;
 
     updateHTML();
-    document.querySelector('.timer-min').innerHTML = pad(minutes, 2);
-    document.querySelector('.timer-sec').innerHTML = pad(seconds, 2);
-    document.querySelector('.timer-mil').innerHTML = pad(milliseconds, 3);
   }
 
   timer = setInterval(function () {
@@ -105,6 +102,26 @@ $(document).on("click", ".js-fill-in-time-button", function() {
   setTimeout(function() {
     clearInterval(timer);
     updateTimers(racer.totalTime);
+  }, totalTime);
+
+  function stopWatch(swtime) {
+    var swhours = Math.floor(swtime / _hour),
+      swminutes = Math.floor((swtime % _hour) / _minute),
+      swseconds = Math.floor((swtime % _minute) / _second),
+      swmilliseconds = Math.floor((swtime % _second) / _millisecond);
+
+    document.querySelector('.timer-min').innerHTML = pad(swminutes, 2);
+    document.querySelector('.timer-sec').innerHTML = pad(swseconds, 2);
+    document.querySelector('.timer-mil').innerHTML = pad(swmilliseconds, 3);
+  }
+
+  stopWatchTimer = setInterval(function () {
+    stopWatch(new Date() - startTime);
+  }, 1);
+
+  setTimeout(function() {
+    clearInterval(stopWatchTimer);
+    stopWatch(totalTime);
   }, totalTime);
 
 });
