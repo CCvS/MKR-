@@ -228,3 +228,160 @@
   92%      { top: 276px; left: 100px; }
   96%      { top: 272px; left:  75px; }
 }
+
+.daisy-circuit {
+  position: absolute;
+  animation: daisycircuit;
+  animation-fill-mode: forwards;
+  animation-timing-function: linear;
+}
+
+@keyframes daisycircuit {
+  0%, 100% { top: 140px; left: 168px; }
+  5%       { top: 143px; left: 120px; }
+  9%       { top: 154px; left:  74px; }
+  12%      { top: 142px; left:  49px; }
+  15%      { top: 121px; left:  38px; }
+  18%      { top:  99px; left:  61px; }
+  22%      { top:  78px; left:  79px; }
+  25%      { top:  78px; left: 104px; }
+  29%      { top:  97px; left: 131px; }
+  32%      { top:  97px; left: 153px; }
+  37%      { top:  88px; left: 179px; }
+  41%      { top:  98px; left: 209px; }
+  45%      { top:  83px; left: 241px; }
+  49%      { top:  74px; left: 274px; }
+  52%      { top:  88px; left: 290px; }
+  55%      { top: 106px; left: 284px; }
+  58%      { top: 126px; left: 263px; }
+  61%      { top: 139px; left: 259px; }
+  64%      { top: 166px; left: 247px; }
+  70%      { top: 211px; left: 249px; }
+  74%      { top: 237px; left: 261px; }
+  77%      { top: 258px; left: 254px; }
+  79%      { top: 258px; left: 237px; }
+  83%      { top: 239px; left: 228px; }
+  88%      { top: 200px; left: 237px; }
+  92%      { top: 166px; left: 235px; }
+  96%      { top: 146px; left: 204px; }
+}
+
+.koopa-cape {
+  position: absolute;
+  animation: koopacape;
+  animation-fill-mode: forwards;
+  animation-timing-function: linear;
+}
+
+@keyframes koopacape {
+  0%, 100% { top: 230px; left: 157px; }
+  5%       { top: 202px; left: 160px; }
+  10%      { top: 183px; left: 174px; }
+  14%      { top: 152px; left: 185px; }
+  20%      { top: 120px; left: 177px; }
+  25%      { top: 108px; left: 154px; }
+  28%      { top:  95px; left: 149px; }
+  32%      { top:  63px; left: 153px; }
+  34%      { top:  53px; left: 146px; }
+  36%      { top:  58px; left: 136px; }
+  37%      { top:  62px; left: 132px; }
+  41%      { top:  98px; left: 115px; }
+  44%      { top: 120px; left:  99px; }
+  46%      { top: 135px; left:  94px; }
+  50%      { top: 137px; left: 122px; }
+  54%      { top: 141px; left: 147px; }
+  57%      { top: 156px; left: 152px; }
+  60%      { top: 170px; left: 149px; }
+  66%      { top: 199px; left: 171px; }
+  69%      { top: 226px; left: 189px; }
+  71%      { top: 226px; left: 198px; }
+  74%      { top: 214px; left: 218px; }
+  76%      { top: 200px; left: 228px; }
+  78%      { top: 201px; left: 241px; }
+  80%      { top: 212px; left: 244px; }
+  87%      { top: 261px; left: 183px; }
+  89%      { top: 278px; left: 159px; }
+  91%      { top: 270px; left: 149px; }
+  94%      { top: 260px; left: 148px; }
+  97%      { top: 244px; left: 156px; }
+}
+
+.maple-treeway {
+  position: absolute;
+  animation: mapletreeway;
+  animation-fill-mode: forwards;
+  animation-timing-function: linear;
+}
+
+@keyframes mapletreeway {
+  0%, 100% { top:  78px; left: 217px; }
+  6%       { top:  46px; left: 215px; }
+  9%       { top:  35px; left: 197px; }
+  12%      { top:  22px; left: 182px; }
+  15%      { top:  31px; left: 171px; }
+  17%      { top:  41px; left: 168px; }
+  23%      { top: 226px; left: 173px; }
+  28%      { top: 252px; left: 172px; }
+  31%      { top: 258px; left: 156px; }
+  35%      { top: 241px; left: 142px; }
+  38%      { top: 221px; left: 136px; }
+  40%      { top: 211px; left: 141px; }
+  42%      { top: 214px; left: 155px; }
+  45%      { top: 240px; left: 155px; }
+  47%      { top: 252px; left: 164px; }
+  50%      { top: 273px; left: 177px; }
+  53%      { top: 290px; left: 183px; }
+  56%      { top: 297px; left: 165px; }
+  59%      { top: 295px; left: 133px; }
+  63%      { top: 304px; left: 109px; }
+  65%      { top: 296px; left: 105px; }
+  67%      { top: 280px; left: 121px; }
+  71%      { top: 266px; left: 143px; }
+  77%      { top: 238px; left: 181px; }
+  79%      { top: 221px; left: 203px; }
+  82%      { top: 209px; left: 217px; }
+  85%      { top: 189px; left: 219px; }
+  87%      { top: 179px; left: 216px; }
+  90%      { top: 167px; left: 220px; }
+  93%      { top: 140px; left: 226px; }
+  95%      { top: 124px; left: 226px; }
+  98%      { top:  99px; left: 219px; }
+}
+
+.grumble-volcano {
+  position: absolute;
+  animation: grumblevolcano;
+  animation-fill-mode: forwards;
+  animation-timing-function: linear;
+}
+
+@keyframes grumblevolcano {
+  0%, 100% { top: 168px; left: 106px; }
+  10%      { top: 101px; left: 107px; }
+  13%      { top:  81px; left: 103px; }
+  16%      { top:  66px; left: 107px; }
+  20%      { top:  45px; left:  96px; }
+  22%      { top:  32px; left: 100px; }
+  26%      { top:  28px; left: 127px; }
+  29%      { top:  28px; left: 157px; }
+  32%      { top:  34px; left: 171px; }
+  34%      { top:  41px; left: 181px; }
+  38%      { top:  48px; left: 212px; }
+  41%      { top:  64px; left: 221px; }
+  44%      { top:  79px; left: 211px; }
+  47%      { top:  78px; left: 185px; }
+  49%      { top:  90px; left: 176px; }
+  52%      { top: 105px; left: 181px; }
+  55%      { top: 129px; left: 194px; }
+  62%      { top: 190px; left: 194px; }
+  67%      { top: 220px; left: 202px; }
+  72%      { top: 262px; left: 226px; }
+  74%      { top: 272px; left: 226px; }
+  80%      { top: 295px; left: 193px; }
+  83%      { top: 285px; left: 178px; }
+  87%      { top: 260px; left: 156px; }
+  90%      { top: 235px; left: 158px; }
+  93%      { top: 226px; left: 129px; }
+  95%      { top: 216px; left: 108px; }
+  98%      { top: 194px; left: 105px; }
+}

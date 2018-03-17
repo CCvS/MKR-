@@ -74,8 +74,11 @@ function updateProgressBar() {
     $('.race-progress-bar__player[data-racer-id="' + racer.id + '"]');
 
     $('.race-progress-bar__player[data-racer-id="' + racer.id + '"]').attr('data-rounds', racer.raced);
+    $('.race-progress-bar__player[data-racer-id="' + racer.id + '"]').css("z-index", racer.raced);
+
+    $('.race-progress-bar__player').css("animation-timing-function", "linear");
     $('.race-progress-bar__player').css("transition-property", "left");
-    $('.race-progress-bar__player').css("transition-duration", "144000ms");
+    $('.race-progress-bar__player').css("transition-duration", "200000ms");
   })
 }
 

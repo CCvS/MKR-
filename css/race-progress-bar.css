@@ -23,10 +23,10 @@
 
 .race-progress-bar__player {
   position: absolute;
+  z-index: 0;
   width: 30px;
   left: 0;
 }
-
 
 /* Generated */
 .race-progress-bar__player[data-rounds="1"] {
