@@ -7,17 +7,9 @@ body {
   color: #ffffff;
 }
 
-.bg-element {
-  position: absolute;
-
-  background: url("../img/bg_element.png") center right no-repeat;
-  opacity: 0.07;
-
-  width: 569px;
-  height: 680px;
-
-  top: 5%;
-  right: 5%;
-
-  transform: rotate(4deg);
+.background {
+  background-color: #000000;
+  background-image: url("../img/backgrounds/1-luigi-circuit.jpg");
+  background-position: center;
+  background-size: cover;
 }
