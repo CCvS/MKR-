@@ -29,7 +29,7 @@ function updateHTML(racers) {
       classList += "bounce";
     }
 
-    output += "<tr class=\"" + fillInButton + " " + "button" + " " + classList +
+    output += "<tr class=\"" + fillInButton + " button " + classList +
           "\" data-racer=\"" + racer.name +
             "\" data-img=\"" + racer.img +
             "\" data-id=\"" + racer.id +

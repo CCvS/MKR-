@@ -423,3 +423,36 @@
   92%      { top: 118px; left: 135px; }
   95%      { top:  89px; left: 130px; }
 }
+
+.moonview-highway {
+  position: absolute;
+  animation: moonviewhighway;
+  animation-fill-mode: forwards;
+  animation-timing-function: linear;
+}
+
+@keyframes moonviewhighway {
+  0%, 100% { top: 152px; left: 123px; }
+  8%       { top: 131px; left: 122px; }
+  12%      { top: 122px; left: 132px; }
+  16%      { top: 124px; left: 150px; }
+  20%      { top: 115px; left: 155px; }
+  25%      { top:  98px; left: 159px; }
+  32%      { top:  78px; left: 168px; }
+  36%      { top:  64px; left: 177px; }
+  40%      { top:  50px; left: 187px; }
+  43%      { top:  51px; left: 199px; }
+  47%      { top:  66px; left: 204px; }
+  52%      { top:  83px; left: 197px; }
+  60%      { top: 123px; left: 209px; }
+  64%      { top: 150px; left: 211px; }
+  67%      { top: 169px; left: 212px; }
+  70%      { top: 198px; left: 207px; }
+  73%      { top: 233px; left: 204px; }
+  76%      { top: 257px; left: 189px; }
+  82%      { top: 270px; left: 135px; }
+  86%      { top: 252px; left: 118px; }
+  89%      { top: 225px; left: 122px; }
+  92%      { top: 197px; left: 128px; }
+  95%      { top: 175px; left: 124px; }
+}

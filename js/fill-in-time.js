@@ -12,14 +12,14 @@ $(document).on("click", ".js-fill-in-time-button", function() {
     return;
   }
 
+  $("table > tbody").css("pointer-events", "none");
+  $(".js-arrow").css("pointer-events", "none");
+
   $(".circuit-map").append("<img data-img=\"" + $(this).data("img") + "\" src=\"" + "img/circuits/heads/" + $(this).data("img") + ".png" + "\" class=\"" + "js-circuit" + "\">");
 
   doAnimate(circuit, parseInt(lap1));
   $(".js-lap-counter").text(lapCounter);
   console.log("Lap 1: " + lap1);
-
-  $(".js-fill-in-time-button").css("pointer-events", "none");
-  $(".js-arrow").css("pointer-events", "none");
 
   setTimeout(function() {
     doAnimate(circuit, parseInt(lap2));
@@ -39,6 +39,7 @@ $(document).on("click", ".js-fill-in-time-button", function() {
         setTimeout(function() {
           $(".circuit-map img").remove();
           $(".js-arrow").css("pointer-events", "all");
+          $("table > tbody").css("pointer-events", "all");
         }, 2000);
       }, parseInt(lap3));
     }, parseInt(lap2));

@@ -19,7 +19,6 @@ var circuit = config.circuits[0];
 $(function() {
   $('.js-arrow').on('click', function(){
     updateClass($(this).attr('data-dir'));
-    $('.background').css("animation-name", "fadeOut");
   });
 });
 
@@ -27,20 +26,18 @@ function updateClass (direction) {
   var current = $('.js-nav .active'),
       background = $('.background');
 
-  if (direction == 'left' && current.index() > 0) {
-    config.circuits.forEach(function () {
+  config.circuits.forEach(function () {
+    if (direction == 'left' && current.index() > 0) {
       circuit = config.circuits[current.index() - 1]
       current.removeClass('active');
       current.prev().addClass('active');
       background.css("background-image", "url('../mkr/img/backgrounds/" + circuit.id + '-' + circuit.animation + ".jpg')");
-    })
-  }
-  else if (direction == 'right' && current.index() < $('.js-nav div:last-child').index()) {
-    config.circuits.forEach(function () {
+    }
+    else if (direction == 'right' && current.index() < $('.js-nav div:last-child').index()) {
       circuit = config.circuits[current.index() + 1]
       current.removeClass('active');
       current.next().addClass('active');
       background.css("background-image", "url('../mkr/img/backgrounds/" + circuit.id + '-' + circuit.animation + ".jpg')");
-    })
-  }
+    }
+  })
 };

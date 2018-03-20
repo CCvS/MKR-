@@ -7,6 +7,8 @@ table {
 
   text-shadow: 0 0 5px #000;
   border: 1px solid #404040;
+
+  box-shadow: 0 0 20px 10px rgba(0, 0, 0, 0.2);
 }
 
 thead {
@@ -45,10 +47,10 @@ td:nth-child(2) {
 }
 .button:hover {
   background: #06ebf3;
-  background: -moz-linear-gradient(top, #06ebf3 0%,#08a9af 50%,#04858c 51%,#06ebf3 100%);
-  background: -webkit-linear-gradient(top, #06ebf3 0%,#08a9af 50%,#04858c 51%,#06ebf3 100%);
-  background: linear-gradient(to bottom, #06ebf3 0%,#08a9af 50%,#04858c 51%,#06ebf3 100%);
-  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#06ebf3', endColorstr='#06ebf3',GradientType=0 );
+  background: -moz-linear-gradient(top, #797910 0%,#a7a70e 50%,#8c8a0a 51%,#e2e106 100%);
+  background: -webkit-linear-gradient(top, #797910 0%,#a7a70e 50%,#8c8a0a 51%,#e2e106 100%);
+  background: linear-gradient(to bottom, #797910 0%,#a7a70e 50%,#8c8a0a 51%,#e2e106 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#797910', endColorstr='#e2e106',GradientType=0 );
 
   transform: scale(1.05);
 }
@@ -82,5 +84,5 @@ tr.bounce {
 
 @keyframes bounce {
   0%, 50%, 100% { transition: none; transform: none; box-shadow: none; }
-  25%, 75% { transition: .1s ease-in-out; transform: scale(1.05); box-shadow: 0 0 40px 10px #05ebf3; }
+  25%, 75% { transition: .1s ease-in-out; transform: scale(1.05); box-shadow: 0 0 40px 10px #ffff00; }
 }
