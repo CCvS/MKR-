@@ -456,3 +456,45 @@
   92%      { top: 197px; left: 128px; }
   95%      { top: 175px; left: 124px; }
 }
+
+.bowsers-castle {
+  position: absolute;
+  animation: bowserscastle;
+  animation-fill-mode: forwards;
+  animation-timing-function: linear;
+}
+
+@keyframes bowserscastle {
+  0%, 100% { top: 218px; left: 211px; }
+  5%       { top: 176px; left: 211px; }
+  7%       { top: 149px; left: 211px; }
+  13%      { top: 102px; left: 214px; }
+  19%      { top:  65px; left: 211px; }
+  21%      { top:  56px; left: 200px; }
+  23%      { top:  54px; left: 180px; }
+  25%      { top:  44px; left: 173px; }
+  27%      { top:  28px; left: 173px; }
+  29%      { top:  20px; left: 162px; }
+  32%      { top:  29px; left: 134px; }
+  37%      { top:  54px; left: 133px; }
+  40%      { top:  80px; left: 133px; }
+  44%      { top: 110px; left: 142px; }
+  46%      { top: 117px; left: 142px; }
+  50%      { top: 146px; left: 127px; }
+  52%      { top: 156px; left: 127px; }
+  55%      { top: 179px; left: 122px; }
+  58%      { top: 199px; left: 117px; }
+  63%      { top: 228px; left: 132px; }
+  66%      { top: 247px; left: 135px; }
+  69%      { top: 256px; left: 122px; }
+  71%      { top: 242px; left: 110px; }
+  73%      { top: 223px; left: 117px; }
+  75%      { top: 227px; left: 133px; }
+  79%      { top: 253px; left: 142px; }
+  82%      { top: 267px; left: 154px; }
+  84%      { top: 289px; left: 177px; }
+  86%      { top: 306px; left: 195px; }
+  89%      { top: 290px; left: 211px; }
+  94%      { top: 258px; left: 214px; }
+  98%      { top: 234px; left: 212px; }
+}

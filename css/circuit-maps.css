@@ -186,6 +186,7 @@
 .lap-time {
   font-size: 30px;
   line-height: 125%;
+  text-shadow: 2px 2px 0px #000;
 
   margin: 143px auto 0;
 }

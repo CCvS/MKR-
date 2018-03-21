@@ -1,13 +1,11 @@
 table {
-  background: rgba(0, 0, 0, 0.2);
+  background: rgba(5, 235, 243, 0.1);
   margin: 0 auto;
 
   width: 540px;
   font-weight: bold;
 
   text-shadow: 0 0 5px #000;
-  border: 1px solid #404040;
-
   box-shadow: 0 0 20px 10px rgba(0, 0, 0, 0.2);
 }
 
@@ -26,14 +24,16 @@ td, th {
 }
 
 /* Zebra Strips */
-tr:nth-child(odd) {
-  background: rgba(255, 255, 255, 0.05);
-  border: 1px solid #404040;
+tr {
+  background: -moz-linear-gradient(top, rgba(255,255,255,0.2) 0%, rgba(255,255,255,0) 5%, rgba(255,255,255,0.15) 50%, rgba(255,255,255,0) 51%, rgba(0,0,0,0) 95%, rgba(0,0,0,1) 100%);
+  background: -webkit-linear-gradient(top, rgba(255,255,255,0.2) 0%,rgba(255,255,255,0) 5%,rgba(255,255,255,0.15) 50%,rgba(255,255,255,0) 51%,rgba(0,0,0,0) 95%,rgba(0,0,0,1) 100%);
+  background: linear-gradient(to bottom, rgba(255,255,255,0.2) 0%,rgba(255,255,255,0) 5%,rgba(255,255,255,0.15) 50%,rgba(255,255,255,0) 51%,rgba(0,0,0,0) 95%,rgba(0,0,0,1) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#000000',GradientType=0 );
 }
 
 td:nth-child(1) {
   text-align: right;
-  padding: 0 2px 0 0;
+  padding: 0 5px 0 5px;
   width: 22px;
 }
 
@@ -46,11 +46,11 @@ td:nth-child(2) {
   cursor: pointer;
 }
 .button:hover {
-  background: #06ebf3;
-  background: -moz-linear-gradient(top, #797910 0%,#a7a70e 50%,#8c8a0a 51%,#e2e106 100%);
-  background: -webkit-linear-gradient(top, #797910 0%,#a7a70e 50%,#8c8a0a 51%,#e2e106 100%);
-  background: linear-gradient(to bottom, #797910 0%,#a7a70e 50%,#8c8a0a 51%,#e2e106 100%);
-  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#797910', endColorstr='#e2e106',GradientType=0 );
+  background: rgb(255,192,0);
+  background: -moz-linear-gradient(top, rgba(255,192,0,1) 0%, rgba(255,122,0,1) 5%, rgba(255,122,0,1) 5%, rgba(255,192,0,1) 50%, rgba(255,192,0,1) 50%, rgba(255,122,0,1) 51%, rgba(255,122,0,1) 51%, rgba(255,122,0,1) 90%, rgba(226,60,0,1) 100%);
+  background: -webkit-linear-gradient(top, rgba(255,192,0,1) 0%,rgba(255,122,0,1) 5%,rgba(255,122,0,1) 5%,rgba(255,192,0,1) 50%,rgba(255,192,0,1) 50%,rgba(255,122,0,1) 51%,rgba(255,122,0,1) 51%,rgba(255,122,0,1) 90%,rgba(226,60,0,1) 100%);
+  background: linear-gradient(to bottom, rgba(255,192,0,1) 0%,rgba(255,122,0,1) 5%,rgba(255,122,0,1) 5%,rgba(255,192,0,1) 50%,rgba(255,192,0,1) 50%,rgba(255,122,0,1) 51%,rgba(255,122,0,1) 51%,rgba(255,122,0,1) 90%,rgba(226,60,0,1) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffc000', endColorstr='#e23c00',GradientType=0 );
 
   transform: scale(1.05);
 }
@@ -64,13 +64,13 @@ thead tr:hover {
 /* Give the racer name a bit more width than strictly necessary */
 tr td:nth-child(3),
 tr th:nth-child(3) {
-  width: 150px;
-  padding-left: 5px;
+  width: 180px;
+  padding: 0 0 0 10px;
 }
 
 tr td:nth-child(4),
 tr th:nth-child(4) {
-  width: 95px;
+  width: 145px;
   padding: 0 5px 0 0;
 }
 
@@ -83,6 +83,20 @@ tr.bounce {
 }
 
 @keyframes bounce {
-  0%, 50%, 100% { transition: none; transform: none; box-shadow: none; }
-  25%, 75% { transition: .1s ease-in-out; transform: scale(1.05); box-shadow: 0 0 40px 10px #ffff00; }
+  0%, 50%, 100% {
+    transition: none;
+    transform: none;
+    box-shadow: none;
+
+    background: rgb(255,192,0);
+    background: -moz-linear-gradient(top, rgba(255,192,0,1) 0%, rgba(255,122,0,1) 5%, rgba(255,122,0,1) 5%, rgba(255,192,0,1) 50%, rgba(255,192,0,1) 50%, rgba(255,122,0,1) 51%, rgba(255,122,0,1) 51%, rgba(255,122,0,1) 90%, rgba(226,60,0,1) 100%);
+    background: -webkit-linear-gradient(top, rgba(255,192,0,1) 0%,rgba(255,122,0,1) 5%,rgba(255,122,0,1) 5%,rgba(255,192,0,1) 50%,rgba(255,192,0,1) 50%,rgba(255,122,0,1) 51%,rgba(255,122,0,1) 51%,rgba(255,122,0,1) 90%,rgba(226,60,0,1) 100%);
+    background: linear-gradient(to bottom, rgba(255,192,0,1) 0%,rgba(255,122,0,1) 5%,rgba(255,122,0,1) 5%,rgba(255,192,0,1) 50%,rgba(255,192,0,1) 50%,rgba(255,122,0,1) 51%,rgba(255,122,0,1) 51%,rgba(255,122,0,1) 90%,rgba(226,60,0,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffc000', endColorstr='#e23c00',GradientType=0 );
+  }
+  25%, 75% {
+    transition: .1s ease-in-out;
+    transform: scale(1.05);
+    box-shadow: 0 0 40px 10px #06ebf3;
+  }
 }
