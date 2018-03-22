@@ -8,9 +8,7 @@ $(document).on("click", ".js-fill-in-time-button", function() {
       totalTime = parseInt(lap1) + parseInt(lap2) + parseInt(lap3),
       startTime = new Date();
 
-  if (lap1, lap2, lap3 === null) {
-    return;
-  }
+  if (lap1, lap2, lap3 === null) { return; }
 
   $("table > tbody").css("pointer-events", "none");
   $(".js-arrow").css("pointer-events", "none");

@@ -498,3 +498,44 @@
   94%      { top: 258px; left: 214px; }
   98%      { top: 234px; left: 212px; }
 }
+
+.rainbow-road {
+  position: absolute;
+  animation: rainbowroad;
+  animation-fill-mode: forwards;
+  animation-timing-function: linear;
+}
+
+@keyframes rainbowroad {
+  0%, 100% { top:  86px; left: 130px; }
+  10%      { top:  86px; left: 228px; }
+  13%      { top:  85px; left: 262px; }
+  16%      { top:  72px; left: 277px; }
+  21%      { top:  31px; left: 266px; }
+  23%      { top:  29px; left: 252px; }
+  26%      { top:  52px; left: 241px; }
+  33%      { top: 117px; left: 242px; }
+  36%      { top: 152px; left: 242px; }
+  39%      { top: 182px; left: 253px; }
+  41%      { top: 198px; left: 250px; }
+  43%      { top: 215px; left: 252px; }
+  46%      { top: 236px; left: 244px; }
+  48%      { top: 254px; left: 229px; }
+  50%      { top: 265px; left: 232px; }
+  53%      { top: 283px; left: 250px; }
+  55%      { top: 295px; left: 246px; }
+  58%      { top: 293px; left: 223px; }
+  61%      { top: 270px; left: 215px; }
+  67%      { top: 111px; left: 192px; }
+  69%      { top:  87px; left: 197px; }
+  72%      { top:  57px; left: 223px; }
+  75%      { top:  35px; left: 214px; }
+  77%      { top:  32px; left: 189px; }
+  80%      { top:  32px; left: 165px; }
+  82%      { top:  54px; left: 150px; }
+  86%      { top:  60px; left: 113px; }
+  90%      { top:  72px; left:  60px; }
+  92%      { top:  93px; left:  56px; }
+  94%      { top:  99px; left:  75px; }
+  97%      { top:  90px; left: 103px; }
+}
