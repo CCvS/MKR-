@@ -173,14 +173,17 @@
 .active { display: block; }
 
 .circuit-name {
-  background: rgba(0, 0, 0, 0.45);
-  font-size: 23px;
-  line-height: 150%;
+  background: -moz-linear-gradient(top, rgba(255, 255, 0, 0.2) 0%,rgba(255, 255, 0, 0.1) 5%,rgba(255, 255, 0, 0.25) 50%,rgba(255, 255, 0, 0.1) 51%,rgba(255, 255, 0, 0.25) 95%,rgb(70, 70, 1) 100%);
+  background: -webkit-linear-gradient(top, rgba(255, 255, 0, 0.2) 0%,rgba(255, 255, 0, 0.1) 5%,rgba(255, 255, 0, 0.25) 50%,rgba(255, 255, 0, 0.1) 51%,rgba(255, 255, 0, 0.25) 95%,rgb(70, 70, 1) 100%);
+  background: linear-gradient(to bottom, rgba(255, 255, 0, 0.2) 0%,rgba(255, 255, 0, 0.1) 5%,rgba(255, 255, 0, 0.25) 50%,rgba(255, 255, 0, 0.1) 51%,rgba(255, 255, 0, 0.25) 95%,rgb(70, 70, 1) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffff00', endColorstr='#464601',GradientType=0 );
+  font-size: 22px;
+  line-height: 1.68em;
   text-align: center;
   text-transform: uppercase;
+  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
 
-  border: 2px solid #373a0a;
-  border-radius: 5px;
+  border: 1px solid #333300;
 }
 
 .lap-time {
