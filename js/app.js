@@ -80,6 +80,18 @@ function updateProgressBar() {
     $('.race-progress-bar__player').css("transition-property", "left");
     $('.race-progress-bar__player').css("transition-duration", "200000ms");
   })
+  sortProgressBar();
+}
+
+function sortProgressBar() {
+  return config.racers.sort(function (a, b) {
+
+    if (a.name < b.name) { return  1; }
+    if (a.name > b.name) { return -1; }
+
+    return 0;
+
+  });
 }
 
 function $$(expr) {

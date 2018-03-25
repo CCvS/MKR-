@@ -202,3 +202,13 @@
 }
 .arrow-left:hover,
 .arrow-right:hover { transform: scale(1.3); }
+
+.scale {
+  animation-duration: 30s;
+  animation-name: scale;
+}
+
+@keyframes scale {
+  0%   { width: auto; }
+  100% { width: 15%; }
+}
