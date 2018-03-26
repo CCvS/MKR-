@@ -616,3 +616,34 @@
   90%      { top: 229px; left:  46px; }
   94%      { top: 185px; left:  41px; }
 }
+
+.mario-raceway-n64 {
+  position: absolute;
+  animation: marioracewayn64;
+  animation-fill-mode: forwards;
+  animation-timing-function: linear;
+}
+
+@keyframes marioracewayn64 {
+  0%, 100% { top: 123px; left:  32px; }
+  5%       { top:  82px; left:  34px; }
+  13%      { top:  37px; left: 104px; }
+  15%      { top:  41px; left: 123px; }
+  18%      { top:  65px; left: 126px; }
+  21%      { top:  92px; left: 123px; }
+  27%      { top: 131px; left: 171px; }
+  32%      { top: 134px; left: 222px; }
+  37%      { top:  90px; left: 251px; }
+  41%      { top:  60px; left: 274px; }
+  43%      { top:  64px; left: 292px; }
+  46%      { top:  90px; left: 295px; }
+  52%      { top: 135px; left: 278px; }
+  57%      { top: 177px; left: 291px; }
+  68%      { top: 270px; left: 298px; }
+  71%      { top: 291px; left: 277px; }
+  75%      { top: 269px; left: 249px; }
+  79%      { top: 232px; left: 252px; }
+  82%      { top: 216px; left: 225px; }
+  94%      { top: 209px; left:  78px; }
+  97%      { top: 163px; left:  34px; }
+}
