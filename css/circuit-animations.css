@@ -647,3 +647,38 @@
   94%      { top: 209px; left:  78px; }
   97%      { top: 163px; left:  34px; }
 }
+
+.sherbet-land-n64 {
+  position: absolute;
+  animation: sherbetlandn64;
+  animation-fill-mode: forwards;
+  animation-timing-function: linear;
+}
+
+@keyframes sherbetlandn64 {
+  0%, 100% { top: 168px; left: 257px; }
+  3%       { top: 147px; left: 259px; }
+  6%       { top: 129px; left: 280px; }
+  9%       { top: 115px; left: 277px; }
+  13%      { top:  99px; left: 249px; }
+  16%      { top:  82px; left: 237px; }
+  20%      { top:  70px; left: 218px; }
+  24%      { top:  43px; left: 215px; }
+  26%      { top:  41px; left: 207px; }
+  33%      { top:  80px; left: 169px; }
+  38%      { top: 110px; left: 142px; }
+  45%      { top: 150px; left: 102px; }
+  50%      { top: 190px; left:  87px; }
+  54%      { top: 225px; left:  57px; }
+  58%      { top: 261px; left:  46px; }
+  62%      { top: 283px; left:  88px; }
+  66%      { top: 265px; left: 124px; }
+  69%      { top: 245px; left: 116px; }
+  73%      { top: 223px; left:  92px; }
+  77%      { top: 195px; left: 106px; }
+  83%      { top: 176px; left: 160px; }
+  87%      { top: 198px; left: 192px; }
+  92%      { top: 230px; left: 219px; }
+  94%      { top: 230px; left: 236px; }
+  98%      { top: 195px; left: 255px; }
+}

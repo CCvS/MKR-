@@ -50,6 +50,10 @@ td:nth-child(2) {
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffc000', endColorstr='#e23c00',GradientType=0 );
 
   transform: scale(1.05);
+
+  -webkit-box-shadow: 2px 3px 0 0 rgba(0, 0, 0, 0.5);
+     -moz-box-shadow: 2px 3px 0 0 rgba(0, 0, 0, 0.5);
+          box-shadow: 2px 3px 0 0 rgba(0, 0, 0, 0.5);
 }
 
 thead tr { transition: none; }
