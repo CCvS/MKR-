@@ -13,10 +13,12 @@ $(document).on("click", ".js-fill-in-time-button", function() {
   $(".lap-1").text("Lap 1: --:--.---");
   $(".lap-2").text("Lap 2: --:--.---");
   $(".lap-3").text("Lap 3: --:--.---");
-
   $(".lap-1").removeClass("attention-bounce");
   $(".lap-2").removeClass("attention-bounce");
   $(".lap-3").removeClass("attention-bounce");
+  $(".lap-1").css("color", "white");
+  $(".lap-2").css("color", "white");
+  $(".lap-3").css("color", "white");
 
   $("table > tbody").css("pointer-events", "none");
   $(".js-arrow").css("pointer-events", "none");
@@ -45,11 +47,31 @@ $(document).on("click", ".js-fill-in-time-button", function() {
       $(".lap-2").append('<span class="lap-2-min">00</span>:<span class="lap-2-sec">00</span>.<span class="lap-2-mil">000</span>');
       $(".lap-2").addClass("attention-bounce");
 
+      if (lap2 < lap1) {
+        $(".lap-2").css("color", "yellow");
+      } else {
+        $(".lap-1").css("color", "yellow");
+        $(".lap-2").css("color", "white");
+      }
+
       setTimeout(function() {
         $(".lap-3").text("Lap 3: ");
         $(".lap-3").append('<span class="lap-3-min">00</span>:<span class="lap-3-sec">00</span>.<span class="lap-3-mil">000</span>');
         $(".lap-3").addClass("attention-bounce");
         $(".circuit-map img").fadeOut(2000);
+
+        if (lap3 < lap1) {
+          $(".lap-1").css("color", "white");
+          $(".lap-3").css("color", "yellow");
+        } else {
+          $(".lap-3").css("color", "white");
+        }
+        if (lap3 < lap2) {
+          $(".lap-2").css("color", "white");
+          $(".lap-3").css("color", "yellow");
+        } else {
+          $(".lap-3").css("color", "white");
+        }
 
         setTimeout(function() {
           $(".circuit-map img").remove();
