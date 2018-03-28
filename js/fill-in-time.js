@@ -10,6 +10,14 @@ $(document).on("click", ".js-fill-in-time-button", function() {
 
   if (lap1, lap2, lap3 === null) { return; }
 
+  $(".lap-1").text("");
+  $(".lap-2").text("");
+  $(".lap-3").text("");
+
+  $(".lap-1").removeClass("attention-bounce");
+  $(".lap-2").removeClass("attention-bounce");
+  $(".lap-3").removeClass("attention-bounce");
+
   $("table > tbody").css("pointer-events", "none");
   $(".js-arrow").css("pointer-events", "none");
 
@@ -24,14 +32,20 @@ $(document).on("click", ".js-fill-in-time-button", function() {
     console.log("Lap 2: " + lap2);
     lapCounter++;
     $(".js-lap-counter").text(lapCounter);
+    $(".lap-1").append('<span class="lap-1-min">00</span>:<span class="lap-1-sec">00</span>.<span class="lap-1-mil">000</span>');
+    $(".lap-1").addClass("attention-bounce");
 
     setTimeout(function() {
       doAnimate(circuit, parseInt(lap3));
       console.log("Final lap: " + lap3);
       lapCounter++;
       $(".js-lap-counter").text(lapCounter);
+      $(".lap-2").append('<span class="lap-2-min">00</span>:<span class="lap-2-sec">00</span>.<span class="lap-2-mil">000</span>');
+      $(".lap-2").addClass("attention-bounce");
 
       setTimeout(function() {
+        $(".lap-3").append('<span class="lap-3-min">00</span>:<span class="lap-3-sec">00</span>.<span class="lap-3-mil">000</span>');
+        $(".lap-3").addClass("attention-bounce");
         $(".circuit-map img").fadeOut(2000);
 
         setTimeout(function() {
@@ -78,7 +92,7 @@ $(document).on("click", ".js-fill-in-time-button", function() {
   /**
    * TODO:
    * 1. Refactor the milliseconds to H:i:s.m
-   * 2. Make sure the timer is different from the racers timer (laptimer vs race timer)
+   * 2. Make sure the timer is different from the racers timer (laptimers vs race timer)
    */
   function updateTimers (time) {
     var hours = Math.floor(time / _hour),
@@ -122,6 +136,47 @@ $(document).on("click", ".js-fill-in-time-button", function() {
     clearInterval(stopWatchTimer);
     stopWatch(totalTime);
   }, totalTime);
+
+  function lapOne(lontime) {
+    var lonhours = Math.floor(lontime / _hour),
+      lonminutes = Math.floor((lontime % _hour) / _minute),
+      lonseconds = Math.floor((lontime % _minute) / _second),
+      lonmilliseconds = Math.floor((lontime % _second) / _millisecond);
+
+    document.querySelector('.lap-1-min').innerHTML = pad(lonminutes, 2);
+    document.querySelector('.lap-1-sec').innerHTML = pad(lonseconds, 2);
+    document.querySelector('.lap-1-mil').innerHTML = pad(lonmilliseconds, 3);
+  }
+  function lapTwo(ltwtime) {
+    var ltwhours = Math.floor(ltwtime / _hour),
+      ltwminutes = Math.floor((ltwtime % _hour) / _minute),
+      ltwseconds = Math.floor((ltwtime % _minute) / _second),
+      ltwmilliseconds = Math.floor((ltwtime % _second) / _millisecond);
+
+    document.querySelector('.lap-2-min').innerHTML = pad(ltwminutes, 2);
+    document.querySelector('.lap-2-sec').innerHTML = pad(ltwseconds, 2);
+    document.querySelector('.lap-2-mil').innerHTML = pad(ltwmilliseconds, 3);
+  }
+  function lapThree(lthtime) {
+    var lthhours = Math.floor(lthtime / _hour),
+      lthminutes = Math.floor((lthtime % _hour) / _minute),
+      lthseconds = Math.floor((lthtime % _minute) / _second),
+      lthmilliseconds = Math.floor((lthtime % _second) / _millisecond);
+
+    document.querySelector('.lap-3-min').innerHTML = pad(lthminutes, 2);
+    document.querySelector('.lap-3-sec').innerHTML = pad(lthseconds, 2);
+    document.querySelector('.lap-3-mil').innerHTML = pad(lthmilliseconds, 3);
+  }
+
+  setTimeout(function() {
+    lapOne(lap1);
+    setTimeout(function() {
+      lapTwo(lap2);
+      setTimeout(function() {
+        lapThree(lap3);
+      }, parseInt(lap3));
+    }, parseInt(lap2));
+  }, parseInt(lap1));
 
 });
 

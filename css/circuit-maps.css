@@ -186,12 +186,34 @@
   border: 1px solid #333300;
 }
 
-.lap-time {
+.race-time {
   font-size: 30px;
-  line-height: 125%;
+  line-height: 1.25em;
   text-shadow: 2px 2px 0px #000;
 
   margin: 143px auto 0;
+}
+
+.lap-times {
+  margin: 5px 0 0;
+  font-size: 20px;
+  line-height: 1.25em;
+}
+
+.attention-bounce {
+  animation-duration: .5s;
+  animation-name: attention;
+}
+
+@keyframes attention {
+  0%, 100% {
+    transform: none;
+    text-shadow: 2px 2px 0px #000;
+  }
+  50% {
+    transform: scale(1.1);
+    text-shadow: 0 0 5px #fff;
+  }
 }
 
 .arrow-left,
@@ -202,13 +224,3 @@
 }
 .arrow-left:hover,
 .arrow-right:hover { transform: scale(1.3); }
-
-.scale {
-  animation-duration: 30s;
-  animation-name: scale;
-}
-
-@keyframes scale {
-  0%   { width: auto; }
-  100% { width: 15%; }
-}

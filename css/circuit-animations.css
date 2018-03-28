@@ -682,3 +682,29 @@
   94%      { top: 230px; left: 236px; }
   98%      { top: 195px; left: 255px; }
 }
+
+.shy-guy-beach-gba {
+  position: absolute;
+  animation: shyguybeachgba;
+  animation-fill-mode: forwards;
+  animation-timing-function: linear;
+}
+
+@keyframes shyguybeachgba {
+  0%, 100% { top: 210px; left: 278px; }
+  12%      { top: 117px; left: 271px; }
+  17%      { top:  72px; left: 274px; }
+  21%      { top:  57px; left: 245px; }
+  30%      { top:  45px; left: 162px; }
+  35%      { top:  45px; left: 109px; }
+  42%      { top:  77px; left:  65px; }
+  49%      { top: 124px; left:  69px; }
+  56%      { top: 168px; left:  45px; }
+  61%      { top: 197px; left:  38px; }
+  67%      { top: 236px; left:  43px; }
+  72%      { top: 264px; left:  66px; }
+  83%      { top: 269px; left: 153px; }
+  91%      { top: 280px; left: 227px; }
+  95%      { top: 262px; left: 265px; }
+  98%      { top: 227px; left: 277px; }
+}
