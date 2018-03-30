@@ -1,11 +1,11 @@
 .luigi-circuit {
   position: absolute;
-  animation: luigicircuit;
+  animation: luigi-circuit;
   animation-fill-mode: forwards;
   animation-timing-function: linear;
 }
 
-@keyframes luigicircuit {
+@keyframes luigi-circuit {
   0%, 100% { top: 170px; left: 100px; }
   18%      { top:  85px; left: 110px; }
   28%      { top:  65px; left: 165px; }
@@ -20,12 +20,12 @@
 
 .moo-moo-meadows {
   position: absolute;
-  animation: moomoomeadows;
+  animation: moo-moo-meadows;
   animation-fill-mode: forwards;
   animation-timing-function: linear;
 }
 
-@keyframes moomoomeadows {
+@keyframes moo-moo-meadows {
   0%, 100% { top: 161px; left: 278px; }
   15%      { top:  50px; left: 264px; }
   23%      { top:  35px; left: 219px; }
@@ -44,12 +44,12 @@
 
 .mushroom-gorge {
   position: absolute;
-  animation: mushroomgorge;
+  animation: mushroom-gorge;
   animation-fill-mode: forwards;
   animation-timing-function: linear;
 }
 
-@keyframes mushroomgorge {
+@keyframes mushroom-gorge {
   0%, 100% { top: 227px; left: 268px; }
   11%      { top: 179px; left: 269px; }
   21%      { top: 140px; left: 277px; }
@@ -71,12 +71,12 @@
 
 .toads-factory {
   position: absolute;
-  animation: toadsfactory;
+  animation: toads-factory;
   animation-fill-mode: forwards;
   animation-timing-function: linear;
 }
 
-@keyframes toadsfactory {
+@keyframes toads-factory {
   0%, 100% { top: 112px; left:  83px; }
   5%       { top:  69px; left:  84px; }
   9%       { top:  49px; left: 106px; }
@@ -99,12 +99,12 @@
 
 .mario-circuit {
   position: absolute;
-  animation: mariocircuit;
+  animation: mario-circuit;
   animation-fill-mode: forwards;
   animation-timing-function: linear;
 }
 
-@keyframes mariocircuit {
+@keyframes mario-circuit {
   0%, 100% { top: 200px; left: 158px; }
   26%      { top:  75px; left: 156px; }
   31%      { top:  52px; left: 164px; }
@@ -126,12 +126,12 @@
 
 .coconut-mall {
   position: absolute;
-  animation: coconutmall;
+  animation: coconut-mall;
   animation-fill-mode: forwards;
   animation-timing-function: linear;
 }
 
-@keyframes coconutmall {
+@keyframes coconut-mall {
   0%, 100% { top: 247px; left:  81px; }
   8%       { top: 193px; left:  82px; }
   13%      { top: 163px; left:  85px; }
@@ -164,12 +164,12 @@
 
 .dks-snowboard-cross {
   position: absolute;
-  animation: dkssnowboardcross;
+  animation: dks-snowboard-cross;
   animation-fill-mode: forwards;
   animation-timing-function: linear;
 }
 
-@keyframes dkssnowboardcross {
+@keyframes dks-snowboard-cross {
   0%, 100% { top:  19px; left: 161px; }
   6%       { top:  23px; left: 191px; }
   12%      { top:  56px; left: 195px; }
@@ -197,12 +197,12 @@
 
 .warios-goldmine {
   position: absolute;
-  animation: wariosgoldmine;
+  animation: warios-goldmine;
   animation-fill-mode: forwards;
   animation-timing-function: linear;
 }
 
-@keyframes wariosgoldmine {
+@keyframes warios-goldmine {
   0%, 100% { top: 250px; left:  70px; }
   6%       { top: 204px; left:  87px; }
   11%      { top: 171px; left: 107px; }
@@ -231,12 +231,12 @@
 
 .daisy-circuit {
   position: absolute;
-  animation: daisycircuit;
+  animation: daisy-circuit;
   animation-fill-mode: forwards;
   animation-timing-function: linear;
 }
 
-@keyframes daisycircuit {
+@keyframes daisy-circuit {
   0%, 100% { top: 140px; left: 168px; }
   5%       { top: 143px; left: 120px; }
   9%       { top: 154px; left:  74px; }
@@ -268,12 +268,12 @@
 
 .koopa-cape {
   position: absolute;
-  animation: koopacape;
+  animation: koopa-cape;
   animation-fill-mode: forwards;
   animation-timing-function: linear;
 }
 
-@keyframes koopacape {
+@keyframes koopa-cape {
   0%, 100% { top: 230px; left: 157px; }
   5%       { top: 202px; left: 160px; }
   10%      { top: 183px; left: 174px; }
@@ -308,12 +308,12 @@
 
 .maple-treeway {
   position: absolute;
-  animation: mapletreeway;
+  animation: maple-treeway;
   animation-fill-mode: forwards;
   animation-timing-function: linear;
 }
 
-@keyframes mapletreeway {
+@keyframes maple-treeway {
   0%, 100% { top:  78px; left: 217px; }
   6%       { top:  46px; left: 215px; }
   9%       { top:  35px; left: 197px; }
@@ -350,12 +350,12 @@
 
 .grumble-volcano {
   position: absolute;
-  animation: grumblevolcano;
+  animation: grumble-volcano;
   animation-fill-mode: forwards;
   animation-timing-function: linear;
 }
 
-@keyframes grumblevolcano {
+@keyframes grumble-volcano {
   0%, 100% { top: 168px; left: 106px; }
   10%      { top: 101px; left: 107px; }
   13%      { top:  81px; left: 103px; }
@@ -388,12 +388,12 @@
 
 .dry-dry-ruins {
   position: absolute;
-  animation: drydryruins;
+  animation: dry-dry-ruins;
   animation-fill-mode: forwards;
   animation-timing-function: linear;
 }
 
-@keyframes drydryruins {
+@keyframes dry-dry-ruins {
   0%, 100% { top:  69px; left: 130px; }
   5%       { top:  41px; left: 133px; }
   8%       { top:  27px; left: 145px; }
@@ -426,12 +426,12 @@
 
 .moonview-highway {
   position: absolute;
-  animation: moonviewhighway;
+  animation: moonview-highway;
   animation-fill-mode: forwards;
   animation-timing-function: linear;
 }
 
-@keyframes moonviewhighway {
+@keyframes moonview-highway {
   0%, 100% { top: 152px; left: 123px; }
   8%       { top: 131px; left: 122px; }
   12%      { top: 122px; left: 132px; }
@@ -459,12 +459,12 @@
 
 .bowsers-castle {
   position: absolute;
-  animation: bowserscastle;
+  animation: bowsers-castle;
   animation-fill-mode: forwards;
   animation-timing-function: linear;
 }
 
-@keyframes bowserscastle {
+@keyframes bowsers-castle {
   0%, 100% { top: 218px; left: 211px; }
   5%       { top: 176px; left: 211px; }
   7%       { top: 149px; left: 211px; }
@@ -501,12 +501,12 @@
 
 .rainbow-road {
   position: absolute;
-  animation: rainbowroad;
+  animation: rainbow-road;
   animation-fill-mode: forwards;
   animation-timing-function: linear;
 }
 
-@keyframes rainbowroad {
+@keyframes rainbow-road {
   0%, 100% { top:  86px; left: 130px; }
   10%      { top:  86px; left: 228px; }
   13%      { top:  85px; left: 262px; }
@@ -542,12 +542,12 @@
 
 .peach-beach-gcn {
   position: absolute;
-  animation: peachbeachgcn;
+  animation: peach-beach-gcn;
   animation-fill-mode: forwards;
   animation-timing-function: linear;
 }
 
-@keyframes peachbeachgcn {
+@keyframes peach-beach-gcn {
   0%, 100% { top: 143px; left: 107px; }
   14%      { top:  50px; left: 107px; }
   19%      { top:  29px; left: 123px; }
@@ -568,12 +568,12 @@
 
 .yoshi-falls-ds {
   position: absolute;
-  animation: yoshifallsds;
+  animation: yoshi-falls-ds;
   animation-fill-mode: forwards;
   animation-timing-function: linear;
 }
 
-@keyframes yoshifallsds {
+@keyframes yoshi-falls-ds {
   0%, 100% { top: 150px; left:  76px; }
   9%       { top:  80px; left:  76px; }
   16%      { top:  35px; left: 103px; }
@@ -593,12 +593,12 @@
 
 .ghost-valley-2-snes {
   position: absolute;
-  animation: ghostvalley2snes;
+  animation: ghost-valley-2-snes;
   animation-fill-mode: forwards;
   animation-timing-function: linear;
 }
 
-@keyframes ghostvalley2snes {
+@keyframes ghost-valley-2-snes {
   0%, 100% { top: 135px; left:  41px; }
   9%       { top:  72px; left:  41px; }
   14%      { top:  52px; left:  67px; }
@@ -619,12 +619,12 @@
 
 .mario-raceway-n64 {
   position: absolute;
-  animation: marioracewayn64;
+  animation: mario-raceway-n64;
   animation-fill-mode: forwards;
   animation-timing-function: linear;
 }
 
-@keyframes marioracewayn64 {
+@keyframes mario-raceway-n64 {
   0%, 100% { top: 123px; left:  32px; }
   5%       { top:  82px; left:  34px; }
   13%      { top:  37px; left: 104px; }
@@ -650,12 +650,12 @@
 
 .sherbet-land-n64 {
   position: absolute;
-  animation: sherbetlandn64;
+  animation: sherbet-land-n64;
   animation-fill-mode: forwards;
   animation-timing-function: linear;
 }
 
-@keyframes sherbetlandn64 {
+@keyframes sherbet-land-n64 {
   0%, 100% { top: 168px; left: 257px; }
   3%       { top: 147px; left: 259px; }
   6%       { top: 129px; left: 280px; }
@@ -685,12 +685,12 @@
 
 .shy-guy-beach-gba {
   position: absolute;
-  animation: shyguybeachgba;
+  animation: shy-guy-beach-gba;
   animation-fill-mode: forwards;
   animation-timing-function: linear;
 }
 
-@keyframes shyguybeachgba {
+@keyframes shy-guy-beach-gba {
   0%, 100% { top: 210px; left: 278px; }
   12%      { top: 117px; left: 271px; }
   17%      { top:  72px; left: 274px; }
@@ -707,4 +707,85 @@
   91%      { top: 280px; left: 227px; }
   95%      { top: 262px; left: 265px; }
   98%      { top: 227px; left: 277px; }
+}
+
+.delfino-square-ds {
+  position: absolute;
+  animation: delfino-square-ds;
+  animation-fill-mode: forwards;
+  animation-timing-function: linear;
+}
+
+@keyframes delfino-square-ds {
+  0%, 100% { top: 220px; left:  31px; }
+  12%      { top:  99px; left:  29px; }
+  16%      { top:  64px; left:  12px; }
+  18%      { top:  46px; left:  30px; }
+  20%      { top:  57px; left:  57px; }
+  23%      { top:  62px; left:  99px; }
+  25%      { top:  48px; left: 111px; }
+  27%      { top:  32px; left: 111px; }
+  29%      { top:  24px; left: 131px; }
+  32%      { top:  24px; left: 154px; }
+  35%      { top:  38px; left: 173px; }
+  38%      { top:  62px; left: 180px; }
+  47%      { top: 140px; left: 180px; }
+  49%      { top: 148px; left: 196px; }
+  51%      { top: 150px; left: 220px; }
+  54%      { top: 170px; left: 232px; }
+  58%      { top: 210px; left: 223px; }
+  61%      { top: 236px; left: 222px; }
+  63%      { top: 246px; left: 234px; }
+  67%      { top: 248px; left: 282px; }
+  68%      { top: 258px; left: 284px; }
+  71%      { top: 292px; left: 274px; }
+  74%      { top: 300px; left: 244px; }
+  77%      { top: 292px; left: 212px; }
+  81%      { top: 292px; left: 160px; }
+  83%      { top: 289px; left: 122px; }
+  86%      { top: 270px; left: 105px; }
+  89%      { top: 276px; left:  80px; }
+  93%      { top: 276px; left:  43px; }
+  96%      { top: 258px; left:  30px; }
+}
+
+.waluigi-stadium-gcn {
+  position: absolute;
+  animation: waluigi-stadium-gcn;
+  animation-fill-mode: forwards;
+  animation-timing-function: linear;
+}
+
+@keyframes waluigi-stadium-gcn {
+  0%, 100% { top: 169px; left: 161px; }
+  6%       { top: 122px; left: 161px; }
+  9%       { top: 106px; left: 181px; }
+  12%      { top: 108px; left: 211px; }
+  15%      { top: 119px; left: 226px; }
+  19%      { top: 170px; left: 226px; }
+  21%      { top: 185px; left: 213px; }
+  22%      { top: 185px; left: 203px; }
+  24%      { top: 163px; left: 191px; }
+  27%      { top: 137px; left: 191px; }
+  32%      { top:  74px; left: 191px; }
+  33%      { top:  63px; left: 194px; }
+  35%      { top:  48px; left: 180px; }
+  37%      { top:  36px; left: 159px; }
+  41%      { top:  36px; left: 116px; }
+  44%      { top:  59px; left: 103px; }
+  48%      { top:  89px; left: 107px; }
+  54%      { top: 139px; left:  91px; }
+  61%      { top: 207px; left: 103px; }
+  63%      { top: 224px; left: 105px; }
+  65%      { top: 237px; left: 124px; }
+  72%      { top: 237px; left: 218px; }
+  74%      { top: 246px; left: 232px; }
+  76%      { top: 258px; left: 226px; }
+  78%      { top: 260px; left: 209px; }
+  80%      { top: 272px; left: 194px; }
+  83%      { top: 298px; left: 190px; }
+  85%      { top: 301px; left: 175px; }
+  87%      { top: 293px; left: 162px; }
+  90%      { top: 266px; left: 162px; }
+  96%      { top: 198px; left: 161px; }
 }

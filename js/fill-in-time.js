@@ -35,7 +35,7 @@ $(document).on("click", ".js-fill-in-time-button", function() {
     lapCounter++;
     $(".js-lap-counter").text(lapCounter);
     $(".lap-1").text("Lap 1: ");
-    $(".lap-1").append('<span class="lap-1-min">00</span>:<span class="lap-1-sec">00</span>.<span class="lap-1-mil">000</span>');
+    $(".lap-1").append('<span class="lap-1-min"></span>:<span class="lap-1-sec"></span>.<span class="lap-1-mil"></span>');
     $(".lap-1").addClass("attention-bounce");
 
     setTimeout(function() {
@@ -44,7 +44,7 @@ $(document).on("click", ".js-fill-in-time-button", function() {
       lapCounter++;
       $(".js-lap-counter").text(lapCounter);
       $(".lap-2").text("Lap 2: ");
-      $(".lap-2").append('<span class="lap-2-min">00</span>:<span class="lap-2-sec">00</span>.<span class="lap-2-mil">000</span>');
+      $(".lap-2").append('<span class="lap-2-min"></span>:<span class="lap-2-sec"></span>.<span class="lap-2-mil"></span>');
       $(".lap-2").addClass("attention-bounce");
 
       if (lap2 < lap1) {
@@ -56,7 +56,7 @@ $(document).on("click", ".js-fill-in-time-button", function() {
 
       setTimeout(function() {
         $(".lap-3").text("Lap 3: ");
-        $(".lap-3").append('<span class="lap-3-min">00</span>:<span class="lap-3-sec">00</span>.<span class="lap-3-mil">000</span>');
+        $(".lap-3").append('<span class="lap-3-min"></span>:<span class="lap-3-sec"></span>.<span class="lap-3-mil"></span>');
         $(".lap-3").addClass("attention-bounce");
         $(".circuit-map img").fadeOut(2000);
 
@@ -66,7 +66,7 @@ $(document).on("click", ".js-fill-in-time-button", function() {
         } else {
           $(".lap-3").css("color", "white");
         }
-        if (lap3 < lap2) {
+        if (lap3 < (lap1 || lap2)) {
           $(".lap-2").css("color", "white");
           $(".lap-3").css("color", "yellow");
         } else {

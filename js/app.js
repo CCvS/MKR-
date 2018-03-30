@@ -49,7 +49,7 @@ function updateHTML(racers) {
     output += "</tr>\n";
   });
 
-  $$("table > tbody").innerHTML = output;
+  $$(".time-table > tbody").innerHTML = output;
 
   updateProgressBar();
 

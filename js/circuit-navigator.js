@@ -1,14 +1,17 @@
 function initCircuits() {
+  var $tracks = $(".tracks"),
+      $animations = $(".animations"),
+      $best = $(".best-time");
   // Draw initial circuits in animations-container
   config.circuits.forEach(function (track) {
     $('<div />', {
       class: 'circuit-map__' + track.id + '-' + track.animation
-    }).appendTo($('.animations'));
+    }).appendTo($animations);
 
     $('<div />', {
       class: '_' + track.id + '-' + track.animation,
       text: track.id + ". " + track.name
-    }).appendTo($('.tracks'));
+    }).appendTo($tracks);
 
     $('.js-nav div:first-child').addClass('active');
   })
