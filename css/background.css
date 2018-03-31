@@ -12,4 +12,14 @@ body {
   background-image: url("../img/backgrounds/1-luigi-circuit.jpg");
   background-position: center;
   background-size: cover;
+
+  transition: ease-in-out;
+  animation-duration: 60s;
+  animation-name: panorama;
+  animation-iteration-count: infinite;
+}
+
+@keyframes panorama {
+  0%, 100% { background-size: 100%; background-position: center; }
+  25%, 75% { background-size: 120%; background-position: left; }
 }
