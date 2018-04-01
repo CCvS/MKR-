@@ -799,7 +799,7 @@
 
 @keyframes desert-hills-ds {
   0%, 100% { top: 152px; left:  77px; }
-  12%       { top:  67px; left:  77px; }
+  12%      { top:  67px; left:  77px; }
   16%      { top:  28px; left:  92px; }
   20%      { top:  22px; left: 122px; }
   25%      { top:  55px; left: 154px; }
@@ -822,4 +822,42 @@
   91%      { top: 225px; left: 133px; }
   94%      { top: 217px; left: 109px; }
   97%      { top: 179px; left:  81px; }
+}
+
+.bowser-castle-3-gba {
+  position: absolute;
+  animation: bowser-castle-3-gba;
+  animation-fill-mode: forwards;
+  animation-timing-function: linear;
+}
+
+@keyframes bowser-castle-3-gba {
+  0%, 100% { top:  87px; left: 279px; }
+  3%       { top:  54px; left: 279px; }
+  6%       { top:  45px; left: 252px; }
+  11%       { top:  42px; left: 188px; }
+  13%      { top:  63px; left: 181px; }
+  17%      { top: 101px; left: 181px; }
+  19%      { top: 108px; left: 167px; }
+  22%      { top: 108px; left: 123px; }
+  24%      { top:  94px; left: 115px; }
+  26%      { top:  68px; left: 115px; }
+  29%      { top:  61px; left:  86px; }
+  32%      { top:  69px; left:  62px; }
+  36%      { top: 118px; left:  62px; }
+  42%      { top: 182px; left:  46px; }
+  50%      { top: 273px; left:  43px; }
+  52%      { top: 284px; left:  59px; }
+  54%      { top: 267px; left:  78px; }
+  55%      { top: 253px; left:  78px; }
+  57%      { top: 203px; left:  78px; }
+  59%      { top: 194px; left:  99px; }
+  68%      { top: 194px; left: 207px; }
+  70%      { top: 205px; left: 213px; }
+  72%      { top: 219px; left: 217px; }
+  75%      { top: 241px; left: 234px; }
+  77%      { top: 253px; left: 251px; }
+  79%      { top: 264px; left: 255px; }
+  81%      { top: 264px; left: 273px; }
+  83%      { top: 248px; left: 279px; }
 }
