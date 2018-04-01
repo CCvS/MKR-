@@ -835,7 +835,7 @@
   0%, 100% { top:  87px; left: 279px; }
   3%       { top:  54px; left: 279px; }
   6%       { top:  45px; left: 252px; }
-  11%       { top:  42px; left: 188px; }
+  11%      { top:  42px; left: 188px; }
   13%      { top:  63px; left: 181px; }
   17%      { top: 101px; left: 181px; }
   19%      { top: 108px; left: 167px; }
@@ -860,4 +860,48 @@
   79%      { top: 264px; left: 255px; }
   81%      { top: 264px; left: 273px; }
   83%      { top: 248px; left: 279px; }
+}
+
+.dks-jungle-parkway-n64 {
+  position: absolute;
+  animation: dks-jungle-parkway-n64;
+  animation-fill-mode: forwards;
+  animation-timing-function: linear;
+}
+
+@keyframes dks-jungle-parkway-n64 {
+  0%, 100% { top: 199px; left: 226px; }
+  3%       { top: 199px; left: 200px; }
+  6%       { top: 178px; left: 180px; }
+  12%      { top: 105px; left: 154px; }
+  15%      { top:  68px; left: 164px; }
+  17%      { top:  61px; left: 190px; }
+  19%      { top:  77px; left: 204px; }
+  21%      { top:  95px; left: 196px; }
+  23%      { top:  95px; left: 180px; }
+  26%      { top:  75px; left: 157px; }
+  29%      { top:  30px; left:  94px; }
+  31%      { top:  38px; left:  83px; }
+  36%      { top:  83px; left:  91px; }
+  41%      { top: 134px; left:  95px; }
+  43%      { top: 146px; left:  81px; }
+  45%      { top: 144px; left:  61px; }
+  47%      { top: 160px; left:  49px; }
+  52%      { top: 221px; left:  54px; }
+  54%      { top: 229px; left:  75px; }
+  57%      { top: 215px; left: 110px; }
+  59%      { top: 223px; left: 128px; }
+  61%      { top: 245px; left: 125px; }
+  66%      { top: 280px; left:  92px; }
+  68%      { top: 294px; left:  92px; }
+  70%      { top: 303px; left: 115px; }
+  75%      { top: 303px; left: 169px; }
+  78%      { top: 290px; left: 190px; }
+  80%      { top: 273px; left: 197px; }
+  85%      { top: 224px; left: 207px; }
+  87%      { top: 215px; left: 225px; }
+  91%      { top: 235px; left: 260px; }
+  93%      { top: 228px; left: 278px; }
+  96%      { top: 206px; left: 270px; }
+  98%      { top: 199px; left: 245px; }
 }
