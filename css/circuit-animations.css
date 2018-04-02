@@ -905,3 +905,185 @@
   96%      { top: 206px; left: 270px; }
   98%      { top: 199px; left: 245px; }
 }
+
+.mario-circuit-gcn {
+  position: absolute;
+  animation: mario-circuit-gcn;
+  animation-fill-mode: forwards;
+  animation-timing-function: linear;
+}
+
+@keyframes mario-circuit-gcn {
+  0%, 100% { top: 142px; left: 233px; }
+  11%      { top:  63px; left: 233px; }
+  14%      { top:  45px; left: 208px; }
+  17%      { top:  55px; left: 185px; }
+  21%      { top:  85px; left: 172px; }
+  24%      { top:  87px; left: 158px; }
+  28%      { top:  67px; left: 148px; }
+  31%      { top:  36px; left: 113px; }
+  32%      { top:  36px; left: 104px; }
+  35%      { top:  50px; left:  89px; }
+  38%      { top:  73px; left:  89px; }
+  41%      { top:  90px; left: 105px; }
+  43%      { top: 104px; left: 107px; }
+  46%      { top: 132px; left:  95px; }
+  48%      { top: 147px; left:  95px; }
+  51%      { top: 170px; left: 111px; }
+  67%      { top: 290px; left: 109px; }
+  70%      { top: 300px; left: 128px; }
+  73%      { top: 279px; left: 145px; }
+  78%      { top: 245px; left: 139px; }
+  81%      { top: 234px; left: 160px; }
+  84%      { top: 231px; left: 184px; }
+  86%      { top: 225px; left: 202px; }
+  89%      { top: 227px; left: 223px; }
+  91%      { top: 210px; left: 233px; }
+}
+
+.mario-circuit-3-snes {
+  position: absolute;
+  animation: mario-circuit-3-snes;
+  animation-fill-mode: forwards;
+  animation-timing-function: linear;
+}
+
+@keyframes mario-circuit-3-snes {
+  0%, 100% { top: 151px; left:  46px; }
+  7%       { top:  68px; left:  50px; }
+  10%      { top:  50px; left:  82px; }
+  13%      { top:  63px; left: 115px; }
+  17%      { top: 106px; left: 140px; }
+  20%      { top: 110px; left: 166px; }
+  23%      { top: 101px; left: 195px; }
+  27%      { top:  58px; left: 218px; }
+  30%      { top:  52px; left: 247px; }
+  34%      { top:  73px; left: 280px; }
+  38%      { top: 110px; left: 283px; }
+  41%      { top: 134px; left: 269px; }
+  50%      { top: 166px; left: 133px; }
+  53%      { top: 185px; left: 128px; }
+  56%      { top: 202px; left: 155px; }
+  65%      { top: 200px; left: 260px; }
+  68%      { top: 214px; left: 279px; }
+  71%      { top: 240px; left: 282px; }
+  74%      { top: 262px; left: 271px; }
+  78%      { top: 272px; left: 235px; }
+  82%      { top: 265px; left: 184px; }
+  85%      { top: 265px; left: 138px; }
+  88%      { top: 281px; left:  95px; }
+  91%      { top: 271px; left:  63px; }
+  94%      { top: 233px; left:  52px; }
+  97%      { top: 183px; left:  46px; }
+}
+
+.peach-gardens-ds {
+  position: absolute;
+  animation: peach-gardens-ds;
+  animation-fill-mode: forwards;
+  animation-timing-function: linear;
+}
+
+@keyframes peach-gardens-ds {
+  0%, 100% { top: 258px; left: 164px; }
+  7%       { top: 204px; left: 164px; }
+  10%      { top: 183px; left: 148px; }
+  13%      { top: 170px; left: 126px; }
+  19%      { top: 175px; left:  56px; }
+  21%      { top: 158px; left:  39px; }
+  22%      { top: 148px; left:  39px; }
+  28%      { top:  94px; left:  45px; }
+  31%      { top:  71px; left:  56px; }
+  34%      { top:  55px; left:  73px; }
+  37%      { top:  59px; left:  95px; }
+  40%      { top:  67px; left: 115px; }
+  43%      { top:  58px; left: 139px; }
+  46%      { top:  67px; left: 163px; }
+  49%      { top:  58px; left: 188px; }
+  52%      { top:  67px; left: 213px; }
+  55%      { top:  60px; left: 240px; }
+  58%      { top:  58px; left: 269px; }
+  61%      { top:  71px; left: 293px; }
+  64%      { top: 102px; left: 284px; }
+  69%      { top: 145px; left: 280px; }
+  71%      { top: 158px; left: 274px; }
+  75%      { top: 184px; left: 285px; }
+  79%      { top: 220px; left: 292px; }
+  82%      { top: 251px; left: 274px; }
+  85%      { top: 284px; left: 286px; }
+  88%      { top: 296px; left: 261px; }
+  96%      { top: 289px; left: 181px; }
+  98%      { top: 273px; left: 166px; }
+}
+
+.dk-mountain-gcn {
+  position: absolute;
+  animation: dk-mountain-gcn;
+  animation-fill-mode: forwards;
+  animation-timing-function: linear;
+}
+
+@keyframes dk-mountain-gcn {
+  0%, 100% { top:  84px; left: 198px; }
+  5%       { top:  53px; left: 206px; }
+  8%       { top:  36px; left: 215px; }
+  13%      { top:  17px; left: 219px; }
+  17%      { top:   7px; left: 203px; }
+  21%      { top:  27px; left: 192px; }
+  32%      { top: 305px; left: 143px; }
+  36%      { top: 316px; left: 129px; }
+  41%      { top: 292px; left: 117px; }
+  49%      { top: 235px; left: 118px; }
+  54%      { top: 221px; left: 145px; }
+  59%      { top: 208px; left: 170px; }
+  64%      { top: 186px; left: 162px; }
+  67%      { top: 180px; left: 162px; }
+  70%      { top: 180px; left: 172px; }
+  75%      { top: 195px; left: 188px; }
+  79%      { top: 188px; left: 194px; }
+  82%      { top: 174px; left: 182px; }
+  85%      { top: 169px; left: 193px; }
+  88%      { top: 158px; left: 205px; }
+  93%      { top: 130px; left: 198px; }
+}
+
+.bowsers-castle-n64 {
+  position: absolute;
+  animation: bowsers-castle-n64;
+  animation-fill-mode: forwards;
+  animation-timing-function: linear;
+}
+
+@keyframes bowsers-castle-n64 {
+  0%, 100% { top: 217px; left:  61px; }
+  8%       { top: 110px; left:  61px; }
+  10%      { top:  95px; left:  78px; }
+  16%      { top:  95px; left: 150px; }
+  18%      { top:  82px; left: 163px; }
+  22%      { top:  44px; left: 160px; }
+  24%      { top:  25px; left: 177px; }
+  28%      { top:  22px; left: 230px; }
+  31%      { top:  27px; left: 261px; }
+  33%      { top:  41px; left: 270px; }
+  39%      { top:  96px; left: 268px; }
+  40%      { top: 101px; left: 257px; }
+  44%      { top: 101px; left: 213px; }
+  45%      { top: 113px; left: 203px; }
+  50%      { top: 158px; left: 203px; }
+  52%      { top: 169px; left: 186px; }
+  55%      { top: 168px; left: 145px; }
+  57%      { top: 181px; left: 135px; }
+  59%      { top: 194px; left: 140px; }
+  65%      { top: 197px; left: 215px; }
+  67%      { top: 210px; left: 222px; }
+  74%      { top: 298px; left: 222px; }
+  76%      { top: 305px; left: 241px; }
+  79%      { top: 287px; left: 259px; }
+  81%      { top: 267px; left: 243px; }
+  85%      { top: 267px; left: 198px; }
+  88%      { top: 270px; left: 147px; }
+  91%      { top: 279px; left: 118px; }
+  93%      { top: 279px; left:  89px; }
+  95%      { top: 274px; left:  69px; }
+  97%      { top: 257px; left:  58px; }
+}
